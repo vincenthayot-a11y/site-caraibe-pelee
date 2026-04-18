@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: vincenthayot-a11y/site-caraibe-pelee
   branch: main
 
 locale: 'fr'
@@ -81,7 +82,3 @@ collections:
               - { label: "Facebook (URL)", name: "facebook", widget: "string", required: false }
               - { label: "Instagram (URL)", name: "instagram", widget: "string", required: false }
               - { label: "WhatsApp (numéro)", name: "whatsapp", widget: "string", required: false }
-backend:
-  name: github
-  repo: vincenthayot-a11y/site-caraibe-pelee
-  branch: main
