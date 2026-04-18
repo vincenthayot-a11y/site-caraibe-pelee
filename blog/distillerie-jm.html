@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>La Distillerie JM à Macouba — Explorer le Nord · Entre la Caraïbe et la Pelée</title>
+<meta name="description" content="Au fond d'un vallon luxuriant, la plus petite et l'une des plus âgées distilleries de l'île. Considérée par beaucoup comme le meilleur rhum agricole au mon"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --deep: #1a3040; --ocean: #0097a7; --lagon: #48cae4;
+  --forest: #5d7a3a; --gold: #f0a500; --gold-light: #fcd34d;
+  --coral: #d4763a; --sand: #f5ede0; --white: #ffffff;
+  --text-dark: #1a2530; --text-mid: #3a5565; --text-light: #7a95a5;
+  --shadow: 0 8px 40px rgba(26,48,64,0.15); --radius: 18px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--sand);color:var(--text-dark);overflow-x:hidden;line-height:1.6}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:10px 48px;background:rgba(26,48,64,0.97);backdrop-filter:blur(12px);box-shadow:0 4px 20px rgba(0,0,0,0.15)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.88);text-decoration:none;font-weight:600;font-size:0.9rem;transition:color 0.2s}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-cta{background:var(--gold)!important;color:var(--deep)!important;padding:9px 22px;border-radius:50px;font-weight:700!important}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.nav-burger span{width:24px;height:2px;background:#fff;border-radius:2px}
+footer{background:var(--deep);color:rgba(255,255,255,0.7);padding:40px 48px 24px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-inner a{color:var(--gold-light);text-decoration:none}
+.footer-copy{font-size:0.8rem}
+.article-hero{position:relative;min-height:420px;display:flex;align-items:flex-end;padding:120px 48px 60px;background-size:cover;background-position:center;color:#fff}
+.article-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,48,64,0.75) 0%,rgba(26,48,64,0.88) 100%)}
+.article-hero>*{position:relative;z-index:1}
+.article-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);line-height:1.2;margin-bottom:14px}
+.article-hero .lede{color:rgba(255,255,255,0.9);font-size:1.1rem;max-width:700px;font-style:italic}
+.meta-bar{background:white;box-shadow:var(--shadow);padding:18px 28px;border-radius:var(--radius);display:flex;flex-wrap:wrap;gap:20px;max-width:800px;margin:-36px auto 0;position:relative;z-index:5;font-size:0.88rem;color:var(--text-mid)}
+.meta-bar strong{color:var(--text-dark)}
+.article-content{max-width:800px;margin:48px auto;padding:0 48px}
+.article-content h2{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--deep);margin:36px 0 16px;line-height:1.3}
+.article-content h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--deep);margin:28px 0 12px}
+.article-content p{color:var(--text-mid);line-height:1.85;margin-bottom:18px;font-size:1rem}
+.article-content ul,.article-content ol{margin:16px 0 18px 24px;color:var(--text-mid)}
+.article-content li{margin-bottom:8px;line-height:1.7}
+.article-content strong{color:var(--text-dark)}
+.article-content img{width:100%;border-radius:12px;margin:24px 0}
+.article-content blockquote{border-left:4px solid var(--gold);padding:16px 24px;margin:24px 0;background:rgba(240,165,0,0.06);border-radius:0 12px 12px 0;font-style:italic;color:var(--text-mid)}
+.article-cta{max-width:800px;margin:0 auto 48px;padding:0 48px}
+.article-cta-box{background:var(--deep);border-radius:var(--radius);padding:36px;text-align:center;color:#fff}
+.article-cta-box h3{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:10px}
+.article-cta-box p{color:rgba(255,255,255,0.7);margin-bottom:20px;font-size:0.95rem}
+.article-cta-box a{display:inline-block;background:linear-gradient(135deg,var(--ocean),var(--gold));color:#fff;padding:12px 32px;border-radius:50px;font-weight:700;text-decoration:none;transition:transform 0.2s}
+.article-cta-box a:hover{transform:translateY(-2px)}
+@media(max-width:900px){nav{padding:14px 24px}.nav-links{display:none}.nav-burger{display:flex}.article-hero{padding:100px 24px 48px;min-height:340px}.article-content{padding:0 24px}.article-cta{padding:0 24px}footer{padding:30px 24px}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../index.html" style="display:flex;align-items:center;gap:14px;text-decoration:none;">
+    <svg width="58" height="58" viewBox="0 0 100 100" style="flex-shrink:0;">
+<circle cx="50" cy="50" r="48" fill="#1a3040" stroke="#f0a500" stroke-width="1.5"/>
+<circle cx="50" cy="38" r="14" fill="#f0a500" opacity="0.9"/>
+<circle cx="50" cy="38" r="10" fill="#f7c948"/>
+<circle cx="50" cy="38" r="6" fill="#ffe066"/>
+<path d="M25 68 L42 40 Q46 34 50 38 L55 44 Q57 42 59 44 L75 65" fill="#5d7a3a"/>
+<path d="M30 68 L44 46 Q47 40 50 44 L60 58" fill="#3d5a25" opacity="0.7"/>
+<path d="M15 70 Q30 62 45 70 Q60 78 75 70 Q85 64 95 70" fill="none" stroke="#48cae4" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M10 76 Q25 68 40 76 Q55 84 70 76 Q85 68 100 76" fill="none" stroke="#48cae4" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+<path d="M28 28 Q31 25 34 27" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+<path d="M66 30 Q69 27 72 29" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+</svg>
+    <span style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.2;">Entre la Caraïbe<br><span style="color:#fcd34d;font-style:italic;font-size:1.1rem;">et la Pelée</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html#logements">Nos logements</a></li>
+    <li><a href="../blog.html">Explorer le Nord</a></li>
+    <li><a href="../index.html#avis">Avis</a></li>
+    <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="article-hero" style="background-image:url('https://images.unsplash.com/photo-1582106245687-cbb466a9f07f?w=1800&q=80');">
+  <div style="max-width:800px;">
+    <div style="display:inline-block;background:rgba(0,151,167,0.25);border:1px solid rgba(0,151,167,0.5);color:var(--lagon);font-size:0.78rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 18px;border-radius:50px;margin-bottom:18px;">Rhum & Gastronomie</div>
+    <h1>La Distillerie JM à Macouba</h1>
+    <p class="lede">Au fond d'un vallon luxuriant, la plus petite et l'une des plus âgées distilleries de l'île. Considérée par beaucoup comme le meilleur rhum agricole au mon</p>
+  </div>
+</div>
+<div class="meta-bar">
+  <span>📅 <strong>2026-04-01</strong></span>
+  <span>🏷 <strong>Rhum & Gastronomie</strong></span>
+  <span>⏱ <strong>30 min</strong> de lecture</span>
+</div>
+<div class="article-content">
+<p>Il y a des distilleries qui impressionnent par leur taille. Et il y a JM, qui impressionne par sa densité. Nichée au fond d&#39;une vallée à Macouba, sur les flancs nord-est de la Montagne Pelée, JM est considérée comme la plus petite distillerie de Martinique — et pourtant l&#39;une des plus médaillées. Ses rhums vieux sont régulièrement cités parmi les meilleurs au monde par les connaisseurs.
+La visite est gratuite, libre, parfaitement balisée, et se fait dans un écrin de verdure d&#39;une beauté rare. On arrive par une petite route sinueuse bordée de bambous géants qui forment une véritable cathédrale naturelle. On traverse un pont de pierre du XIXe. On se gare. On respire. Et on plonge dans l&#39;âme du rhum agricole.</p>
+<h2>🥃 Pourquoi y aller</h2>
+<p>Parce que le cadre est absolument sublime — l&#39;un des plus beaux des distilleries antillaises. Posée toute de rouge vêtue au fond d&#39;un vallon, JM est littéralement enveloppée par la jungle tropicale. Une fois sur place, on suit un parcours marqué par des points rouges au sol, avec panneaux explicatifs, et on déambule entre les champs de canne, la salle de broyage, les 29 cuves de fermentation, les colonnes créoles en cuivre (dont la plus haute culmine à 18 mètres), et les chais de vieillissement.
+Et puis il y a les rhums eux-mêmes. Une particularité JM : le rhum vieux est vieilli dans d&#39;anciens fûts de Bourbon américain, et son degré final n&#39;est pas standardisé — il varie selon les millésimes, préservant l&#39;expression du terroir. Les connaisseurs parlent de <em>« meilleur rhum vieux du monde »</em>. Dégustation gratuite à la fin de la visite, pour se faire son propre avis.</p>
+<h2>✨ À ne pas manquer</h2>
+<ul>
+<li><strong>L&#39;arrivée par la route</strong> — bambous géants, vues plongeantes sur la vallée, pont de pierre du XIXe. Le décor à lui seul vaut le déplacement.- <strong>Le jardin des cannes</strong> — différentes variétés cultivées sur le domaine de 300 hectares de Fonds-Préville.- <strong>La distillerie en activité</strong> (de janvier à juin) — broyage, fermentation sur 29 cuves de 30 000 litres chacune, colonnes créoles en cuivre.- <strong>Le chai de vieillissement</strong> — l&#39;un des plus majestueux de l&#39;île, avec ses fûts de chêne américain (ex-Bourbon).- <strong>L&#39;atelier olfactif</strong> — pour éveiller votre nez avant la dégustation. Ludique et instructif.- <strong>La boutique et la dégustation</strong> — blancs AOC, ambrés, rhums vieux (VSOP, XO, Hors d&#39;Âge « Canopée »), cuvées spéciales (Terroir, Épices Créoles, Juste Macouba). Médailles d&#39;or 2025 au Concours Général Agricole de Paris.- <strong>La balade en 4×4</strong> (sur réservation, en semaine) — 1 h dans les champs de canne à flanc de montagne. Vues incroyables.Combinez la visite avec un déjeuner à Grand&#39;Rivière (15 min en voiture) : la D10 continue ensuite vers ce village du bout du monde. C&#39;est l&#39;un des plus beaux itinéraires du nord. Période idéale : février à juin pour voir la distillerie en activité.</li>
+</ul>
+
+</div>
+<div class="article-cta">
+  <div class="article-cta-box">
+    <h3>Envie de découvrir le Nord ?</h3>
+    <p>Nos bungalows sont le point de départ idéal pour explorer la Martinique authentique.</p>
+    <a href="../index.html#logements">Voir nos logements →</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2025 Entre la Caraïbe et la Pelée · <a href="../index.html">Accueil</a> · <a href="../blog.html">Explorer le Nord</a> · <a href="../index.html#contact">Contact</a></span>
+    <span class="footer-copy">12 hébergements · Le Carbet · Morne-Rouge · Saint-Pierre · Martinique</span>
+  </div>
+</footer>
+<script>
+function toggleMenu(){var l=document.querySelector('.nav-links');if(l.style.display==='flex'){l.style.display='none'}else{l.style.display='flex';l.style.flexDirection='column';l.style.position='fixed';l.style.top='80px';l.style.left='0';l.style.right='0';l.style.background='rgba(26,48,64,0.97)';l.style.padding='20px 24px';l.style.gap='16px';l.style.zIndex='99'}}
+</script>
+</body>
+</html>

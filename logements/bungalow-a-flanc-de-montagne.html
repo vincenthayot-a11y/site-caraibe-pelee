@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Bungalow à flanc de montagne — Morne-Rouge · Entre la Caraïbe et la Pelée</title>
+<meta name="description" content="Bungalow créole en pleine nature composé d'une chambre avecsalle de bain.   Une grande terrasse extérieure avec sa cuisine équipée complète ce logement.   Entou"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --deep: #1a3040; --ocean: #0097a7; --lagon: #48cae4;
+  --forest: #5d7a3a; --gold: #f0a500; --gold-light: #fcd34d;
+  --coral: #d4763a; --turq: #00d4aa;
+  --sand: #f5ede0; --white: #ffffff;
+  --text-dark: #1a2530; --text-mid: #3a5565; --text-light: #7a95a5;
+  --shadow: 0 8px 40px rgba(26,48,64,0.15); --radius: 18px;
+  --ldg-bnb-color-primary: #0097a7; --ldg-bnb-color-primary-lighter: #48cae4;
+  --ldg-bnb-color-primary-darker: #006070; --ldg-bnb-color-primary-contrast: #ffffff;
+  --ldg-bnb-border-radius: 0.42em; --ldg-bnb-button-border-radius: 3.58em;
+  --ldg-bnb-background: #fff; --ldg-bnb-padding: 14px; --ldg-bnb-input-background: #fff;
+  --ldg-bnb-font-family: inherit;
+  --ldg-component-calendar-cell-selection-bg-color: #0097a7;
+  --ldg-component-calendar-cell-selection-color: #fff;
+  --ldg-component-calendar-cell-selected-bg-color: #48cae4;
+  --ldg-component-calendar-cell-selected-color: #006070;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--sand);color:var(--text-dark);overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:10px 48px;background:rgba(26,48,64,0.97);backdrop-filter:blur(12px);box-shadow:0 4px 20px rgba(0,0,0,0.15)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.88);text-decoration:none;font-weight:600;font-size:0.9rem;transition:color 0.2s}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-cta{background:var(--gold)!important;color:var(--deep)!important;padding:9px 22px;border-radius:50px;font-weight:700!important}
+.nav-cta:hover{background:var(--gold-light)!important}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.nav-burger span{width:24px;height:2px;background:#fff;border-radius:2px}
+footer{background:var(--deep);color:rgba(255,255,255,0.7);padding:40px 48px 24px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-inner a{color:var(--gold-light);text-decoration:none}
+.footer-copy{font-size:0.8rem}
+.section-tag{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--ocean);background:rgba(0,151,167,0.1);padding:5px 14px;border-radius:50px;margin-bottom:12px}
+h2{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--deep);line-height:1.2;margin-bottom:14px}
+h2 em{color:var(--ocean);font-style:italic}
+@media(max-width:900px){nav{padding:14px 24px}.nav-links{display:none}.nav-burger{display:flex}footer{padding:30px 24px 20px}}
+</style>
+
+<style>
+.prop-hero{position:relative;padding-top:80px}
+.prop-gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:250px 250px;gap:4px;border-radius:16px;overflow:hidden}
+.prop-gallery img{width:100%;height:100%;object-fit:cover;cursor:pointer;transition:opacity 0.2s}
+.prop-gallery img:hover{opacity:0.9}
+.prop-gallery img:first-child{grid-row:span 2}
+.prop-content{max-width:1100px;margin:0 auto;padding:40px 48px;display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:start}
+.prop-info h1{font-family:'Playfair Display',serif;font-size:2rem;color:var(--deep);margin-bottom:6px}
+.prop-location{font-size:0.9rem;color:var(--text-light);font-weight:600;margin-bottom:20px}
+.prop-desc{color:var(--text-mid);font-size:1rem;line-height:1.8;margin-bottom:28px;white-space:pre-line}
+.prop-amenities{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
+.prop-amenity{background:#edf5f9;border:1px solid #c0dde8;padding:8px 16px;border-radius:50px;font-size:0.85rem;color:var(--text-mid)}
+.prop-sidebar{position:sticky;top:90px}
+.prop-booking{background:var(--white);border-radius:18px;padding:28px;box-shadow:var(--shadow)}
+.prop-booking-title{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--deep);margin-bottom:6px}
+.prop-price{font-family:'Playfair Display',serif;font-size:2rem;color:var(--deep);margin-bottom:16px}
+.prop-price span{font-size:0.9rem;font-family:'Nunito',sans-serif;color:var(--text-light);font-weight:400}
+#lodgify-book-now-box{width:100%}
+.prop-others{margin-top:28px}
+.prop-others h3{font-family:'Playfair Display',serif;font-size:1.2rem;color:var(--deep);margin-bottom:16px}
+.other-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.other-card{background:var(--white);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:transform 0.3s}
+.other-card:hover{transform:translateY(-4px)}
+.other-card img{width:100%;height:160px;object-fit:cover}
+.other-card-body{padding:14px 16px}
+.other-card-name{font-family:'Playfair Display',serif;font-size:1rem;color:var(--deep);margin-bottom:4px}
+.other-card-meta{font-size:0.78rem;color:var(--text-light)}
+.lightbox{display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.95);align-items:center;justify-content:center}
+.lightbox.open{display:flex}
+.lightbox img{max-width:92vw;max-height:88vh;object-fit:contain;border-radius:8px}
+.lb-btn{position:absolute;top:50%;transform:translateY(-50%);width:50px;height:50px;border-radius:50%;background:rgba(255,255,255,0.15);border:1.5px solid rgba(255,255,255,0.3);color:#fff;font-size:1.3rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10}
+.lb-btn:hover{background:rgba(255,255,255,0.3)}
+.lb-btn.prev{left:20px}.lb-btn.next{right:20px}
+.lb-close{position:absolute;top:20px;right:24px;width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.12);border:1.5px solid rgba(255,255,255,0.3);color:#fff;font-size:1.4rem;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:10}
+.lb-close:hover{background:rgba(255,255,255,0.3)}
+.lb-counter{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,0.7);font-size:0.85rem;font-weight:600}
+@media(max-width:900px){.prop-gallery{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px}.prop-gallery img:first-child{grid-row:span 1}.prop-content{grid-template-columns:1fr;padding:28px 24px;gap:28px}.prop-sidebar{position:static}}
+@media(max-width:600px){.prop-gallery{grid-template-columns:1fr;grid-template-rows:auto}.prop-gallery img{height:220px}.prop-gallery img:nth-child(n+4){display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" style="display:flex;align-items:center;gap:14px;text-decoration:none;">
+    <svg width="58" height="58" viewBox="0 0 100 100" style="flex-shrink:0;">
+<circle cx="50" cy="50" r="48" fill="#1a3040" stroke="#f0a500" stroke-width="1.5"/>
+<circle cx="50" cy="38" r="14" fill="#f0a500" opacity="0.9"/>
+<circle cx="50" cy="38" r="10" fill="#f7c948"/>
+<circle cx="50" cy="38" r="6" fill="#ffe066"/>
+<path d="M25 68 L42 40 Q46 34 50 38 L55 44 Q57 42 59 44 L75 65" fill="#5d7a3a"/>
+<path d="M30 68 L44 46 Q47 40 50 44 L60 58" fill="#3d5a25" opacity="0.7"/>
+<path d="M15 70 Q30 62 45 70 Q60 78 75 70 Q85 64 95 70" fill="none" stroke="#48cae4" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M10 76 Q25 68 40 76 Q55 84 70 76 Q85 68 100 76" fill="none" stroke="#48cae4" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+<path d="M28 28 Q31 25 34 27" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+<path d="M66 30 Q69 27 72 29" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+</svg>
+    <span style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.2;">Entre la Caraïbe<br><span style="color:#fcd34d;font-style:italic;font-size:1.1rem;">et la Pelée</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html#logements">Nos logements</a></li>
+    
+    <li><a href="../index.html#avis">Avis</a></li>
+    <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="prop-hero" style="max-width:1100px;margin:0 auto;padding:80px 48px 0;">
+  <div class="prop-gallery"><img src="https://l.icdbcdn.com/oh/b9a4b3bc-52c1-4fe1-b9af-640c04bff12c.jpg?w=800" alt="Bungalow à flanc de montagne" loading="lazy" onclick="openLb(0)"/>
+    <img src="https://l.icdbcdn.com/oh/ef28b587-4047-4541-ad4b-d408ecf582ea.jpg?w=800" alt="Bungalow à flanc de montagne" loading="lazy" onclick="openLb(1)"/>
+    <img src="https://l.icdbcdn.com/oh/61a4b045-e857-435f-b74a-e4e489f822c3.jpg?w=800" alt="Bungalow à flanc de montagne" loading="lazy" onclick="openLb(2)"/>
+    <img src="https://l.icdbcdn.com/oh/c9f5b511-1351-48e9-885a-8012f91bdebd.jpg?w=800" alt="Bungalow à flanc de montagne" loading="lazy" onclick="openLb(3)"/>
+    <img src="https://l.icdbcdn.com/oh/413588b0-b916-440e-934f-b972af31f8b8.jpg?w=800" alt="Bungalow à flanc de montagne" loading="lazy" onclick="openLb(4)"/></div>
+</div>
+<div class="prop-content">
+  <div class="prop-info">
+    <span class="section-tag">Morne-Rouge</span>
+    <h1>Bungalow à flanc de montagne</h1>
+    <div class="prop-location">📍 Morne-Rouge, Martinique</div>
+    <div class="prop-amenities"><span class="prop-amenity">🛏 1 chambre</span>
+      <span class="prop-amenity">👤 2-4 personnes</span>
+      <span class="prop-amenity">☕ Terrasse</span>
+      <span class="prop-amenity">🌋 Vue montagne</span>
+      <span class="prop-amenity">🌿 Jardin tropical</span>
+      <span class="prop-amenity">🌿 Pleine nature</span></div>
+    <div class="prop-desc">Bungalow créole en pleine nature composé d'une chambre avecsalle de bain. 
+
+Une grande terrasse extérieure avec sa cuisine équipée complète ce logement. 
+
+Entouré de 5000 m2 de jardin fleuri et entretenu au pied des Pitons et de la Montagne Pelée, c'est le grand calme !
+
+Vue à 360° à couper le souffle sur des montagnes verdoyantes et sur la forêt tropicale.
+
+Départ de plusieurs circuits de randonnées dès le bungalow, notamment la célèbre boucle Sainte Cécile.
+
+Vous serez à 2 minutes de bons restaurants pour déjeuner le midi, tels que la Chaudière et le Bambou, mais aussi du parc et musée du Domaine de l'Emeraude.
+
+Vous serez situés à 5 minutes du départ de l'ascension de la Montagne Pelée, 15 minutes de St Pierre ville d'Art et d'Histoire, à proximité des magnifiques plages Nord Caraîbe du bourg du Carbet, de ses animations nocturnes et nombreux restaurants....
+
+Vous pourrez aussi visiter aussi les criques sauvages du Prêcheur et ses plages de sable noir, et bien d'autres.
+
+Il est absolument néccessaire d’avoir une voiture pour venir dans ce logement et pour bien profiter du Nord.
+
+Il n'existe pas de transports en commun.
+
+Nous mettons un large parking à votre disposition.
+
+Pour adultes uniquement, deux personnes maximum.</div>
+  </div>
+  <div class="prop-sidebar">
+    <div class="prop-booking">
+      <div class="prop-booking-title">Réserver ce logement</div>
+      <div class="prop-price">59€<span>/nuit</span></div>
+      <div id="lodgify-book-now-box" data-rental-id="433881" data-website-id="403252" data-slug="lesbungalowsdesaintececile" data-language-code="fr" data-new-tab="false" data-version="stable" data-has-guests-breakdown data-check-in-label="Arrivée" data-check-out-label="Départ" data-guests-label="Invités" data-book-button-label="Réservez maintenant" data-total-price-label="Prix total :" data-select-dates-to-see-price-label="Sélectionnez les dates pour voir le prix" data-minimum-price-per-night-first-label="À partir de" data-minimum-price-per-night-second-label="par nuit" data-done-label="Terminé"></div>
+    </div>
+  </div>
+</div>
+<div style="max-width:1100px;margin:0 auto;padding:0 48px 60px;" class="prop-others">
+  <h3>Découvrir nos autres logements</h3>
+  <div class="other-cards"><a href="bungalow-sur-la-plage-balaou.html" class="other-card">
+      <img src="https://l.icdbcdn.com/oh/cd4aacc0-0f6e-478e-980f-98592b0495f1.jpg?w=800" alt="Bungalow sur la plage : Balaou" loading="lazy"/>
+      <div class="other-card-body">
+        <div class="other-card-name">Bungalow sur la plage : Balaou</div>
+        <div class="other-card-meta">📍 Le Carbet · À partir de 95€/nuit</div>
+      </div>
+    </a>
+    <a href="bungalow-sur-la-plage-barracuda.html" class="other-card">
+      <img src="https://l.icdbcdn.com/oh/e3a8e2c4-8782-460f-82b1-0d5a55c9d861.jpg?w=800" alt="Bungalow sur la plage : Barracuda" loading="lazy"/>
+      <div class="other-card-body">
+        <div class="other-card-name">Bungalow sur la plage : Barracuda</div>
+        <div class="other-card-meta">📍 Le Carbet · À partir de 110€/nuit</div>
+      </div>
+    </a>
+    <a href="bungalow-sur-la-plage-coulirou.html" class="other-card">
+      <img src="https://l.icdbcdn.com/oh/ebb53cb1-b2c2-425c-9d78-954ca99d3c00.jpg?w=800" alt="Bungalow sur la plage : Coulirou" loading="lazy"/>
+      <div class="other-card-body">
+        <div class="other-card-name">Bungalow sur la plage : Coulirou</div>
+        <div class="other-card-meta">📍 Le Carbet · À partir de 100€/nuit</div>
+      </div>
+    </a>
+    <a href="bungalow-sur-la-plage-fregate.html" class="other-card">
+      <img src="https://l.icdbcdn.com/oh/5f41d7ef-a855-43be-aaeb-aca5c3db54b0.jpg?w=800" alt="Bungalow sur la plage : Frégate" loading="lazy"/>
+      <div class="other-card-body">
+        <div class="other-card-name">Bungalow sur la plage : Frégate</div>
+        <div class="other-card-meta">📍 Le Carbet · À partir de 105€/nuit</div>
+      </div>
+    </a></div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2025 Entre la Caraïbe et la Pelée · <a href="../index.html">Accueil</a> · <a href="../destinations.html">Destinations</a> · <a href="../index.html#contact">Contact</a></span>
+    <span class="footer-copy">12 hébergements · Le Carbet · Morne-Rouge · Saint-Pierre · Martinique</span>
+  </div>
+</footer>
+<div class="lightbox" id="lightbox" onclick="closeLb(event)">
+  <button class="lb-close" onclick="closeLb(event,true)">✕</button>
+  <button class="lb-btn prev" onclick="event.stopPropagation();lbNav(-1)">❮</button>
+  <img id="lb-img" src="" alt="" onclick="event.stopPropagation()"/>
+  <button class="lb-btn next" onclick="event.stopPropagation();lbNav(1)">❯</button>
+  <div class="lb-counter" id="lb-counter"></div>
+</div>
+<script src="https://app.lodgify.com/book-now-box/stable/renderBookNowBox.js" defer></script>
+
+<script>
+function toggleMenu(){var l=document.querySelector('.nav-links');if(l.style.display==='flex'){l.style.display='none'}else{l.style.display='flex';l.style.flexDirection='column';l.style.position='fixed';l.style.top='80px';l.style.left='0';l.style.right='0';l.style.background='rgba(26,48,64,0.97)';l.style.padding='20px 24px';l.style.gap='16px';l.style.zIndex='99'}}
+</script>
+<script>
+var lbPhotos=["https://l.icdbcdn.com/oh/b9a4b3bc-52c1-4fe1-b9af-640c04bff12c.jpg?w=800", "https://l.icdbcdn.com/oh/ef28b587-4047-4541-ad4b-d408ecf582ea.jpg?w=800", "https://l.icdbcdn.com/oh/61a4b045-e857-435f-b74a-e4e489f822c3.jpg?w=800", "https://l.icdbcdn.com/oh/c9f5b511-1351-48e9-885a-8012f91bdebd.jpg?w=800", "https://l.icdbcdn.com/oh/413588b0-b916-440e-934f-b972af31f8b8.jpg?w=800", "https://l.icdbcdn.com/oh/de8fa2b6-f100-472a-bfca-610c8ce179f5.jpg?w=800", "https://l.icdbcdn.com/oh/ac30518f-88a6-491e-929d-391c860aa8e2.jpg?w=800", "https://l.icdbcdn.com/oh/70138372-c671-438b-bf27-6d17b40f8a85.jpg?w=800", "https://l.icdbcdn.com/oh/1f688866-4888-4dfd-9568-b5adebcebf83.jpg?w=800", "https://l.icdbcdn.com/oh/a12cecce-5318-4d5b-9424-38879e4907a8.jpg?w=800"],lbIdx=0;
+function openLb(i){lbIdx=i;document.getElementById('lb-img').src=lbPhotos[i];document.getElementById('lb-counter').textContent=(i+1)+' / '+lbPhotos.length;document.getElementById('lightbox').classList.add('open')}
+function closeLb(e,f){if(f||e.target===document.getElementById('lightbox'))document.getElementById('lightbox').classList.remove('open')}
+function lbNav(d){lbIdx=(lbIdx+d+lbPhotos.length)%lbPhotos.length;document.getElementById('lb-img').src=lbPhotos[lbIdx];document.getElementById('lb-counter').textContent=(lbIdx+1)+' / '+lbPhotos.length}
+document.addEventListener('keydown',function(e){if(document.getElementById('lightbox').classList.contains('open')){if(e.key==='ArrowLeft')lbNav(-1);if(e.key==='ArrowRight')lbNav(1);if(e.key==='Escape')document.getElementById('lightbox').classList.remove('open')}});
+</script>
+</body>
+</html>

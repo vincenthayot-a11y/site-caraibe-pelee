@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entre la Caraïbe et la Pelée – Bungalows de charme au Nord Martinique</title>
+  <meta name="description" content="Entre la Caraïbe et la Pelée — 12 bungalows et chambres de charme au Carbet, Morne-Rouge et Saint-Pierre. Au pied de la Montagne Pelée, entre mer des Caraïbes et volcan. Réservation en ligne." />
+  <meta name="keywords" content="bungalow martinique, location carbet, hébergement morne-rouge, bungalow saint-pierre, montagne pelée hébergement, location nord martinique, entre mer et pelée" />
+  <meta property="og:title" content="Entre la Caraïbe et la Pelée – Bungalows au Nord Martinique" />
+  <meta property="og:description" content="12 bungalows authentiques entre la mer des Caraïbes et la Montagne Pelée. Carbet, Morne-Rouge, Saint-Pierre. Réservation en ligne." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://locationcaraibeetpelee.com/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- ─── LODGIFY : Variables CSS (Search Box + Booking Box) ─── -->
+  <style>
+    :root {
+      /* Palette du site */
+      /* Palette Caraïbes — Variante Soleil doré */
+      --deep:       #1a3040;
+      --ocean:      #0097a7;
+      --lagon:      #48cae4;
+      --forest:     #5d7a3a;
+      --gold:       #f0a500;
+      --gold-light: #fcd34d;
+      --coral:      #d4763a;
+      --turq:       #00d4aa;
+      --turq-light: #7fecda;
+      --sand:       #f5ede0;
+      --sand-dark:  #e8d5b7;
+      --white:      #ffffff;
+      --text-dark:  #1a2530;
+      --text-mid:   #3a5565;
+      --text-light: #7a95a5;
+      --shadow:     0 8px 40px rgba(26,48,64,0.15);
+      --radius:     18px;
+
+      /* Lodgify Search Bar */
+      --ldg-psb-background: #ffffff;
+      --ldg-psb-border-radius: 0.42em;
+      --ldg-psb-box-shadow: 0px 24px 54px 0px rgba(0, 0, 0, 0.1);
+      --ldg-psb-padding: 14px;
+      --ldg-psb-input-background: #ffffff;
+      --ldg-psb-button-border-radius: 3.58em;
+      --ldg-psb-color-primary: #0097a7;
+      --ldg-psb-color-primary-lighter: #48cae4;
+      --ldg-psb-color-primary-darker: #006070;
+      --ldg-psb-color-primary-contrast: #ffffff;
+
+      /* Lodgify Booking Box */
+      --ldg-bnb-background: #ffffff;
+      --ldg-bnb-border-radius: 0.42em;
+      --ldg-bnb-box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.08);
+      --ldg-bnb-padding: 14px;
+      --ldg-bnb-input-background: #ffffff;
+      --ldg-bnb-button-border-radius: 3.58em;
+      --ldg-bnb-color-primary: #0097a7;
+      --ldg-bnb-color-primary-lighter: #48cae4;
+      --ldg-bnb-color-primary-darker: #006070;
+      --ldg-bnb-color-primary-contrast: #ffffff;
+      --ldg-bnb-font-family: inherit;
+
+      /* Lodgify – Calendrier & couleurs sémantiques */
+      --ldg-semantic-color-primary: #0097a7;
+      --ldg-semantic-color-primary-lighter: #48cae4;
+      --ldg-semantic-color-primary-darker: #006070;
+      --ldg-semantic-color-primary-contrast: #ffffff;
+      --ldg-component-calendar-cell-selection-bg-color: #0097a7;
+      --ldg-component-calendar-cell-selection-color: #ffffff;
+      --ldg-component-calendar-cell-selected-bg-color: #48cae4;
+      --ldg-component-calendar-cell-selected-color: #006070;
+      --ldg-component-modal-z-index: 999;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--sand);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 48px;
+      background: rgba(26,48,64,0.97);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      transition: padding 0.4s;
+    }
+    nav.scrolled {
+      padding: 8px 48px;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+    .nav-logo span { color: var(--gold-light); font-style: italic; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.88);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.3px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold-light); }
+    .nav-cta {
+      background: var(--gold);
+      color: var(--deep) !important;
+      padding: 9px 22px;
+      border-radius: 50px;
+      font-weight: 700 !important;
+      transition: background 0.2s, transform 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--gold-light) !important; transform: translateY(-1px); }
+    .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .nav-burger span { width: 24px; height: 2px; background: white; border-radius: 2px; transition: 0.3s; }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Carrousel d'images de fond — mode slide */
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+      display: flex;
+      transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .hero-bg img {
+      min-width: 100%; width: 100%; height: 100%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    /* Overlay sombre pour lisibilité du texte */
+    .hero-overlay {
+      position: absolute; inset: 0; z-index: 1;
+      background: linear-gradient(
+        to bottom,
+        rgba(26,48,64,0.25) 0%,
+        rgba(26,48,64,0.05) 45%,
+        rgba(26,48,64,0.4) 100%
+      );
+    }
+    /* Contenu texte au-dessus */
+    .hero > *:not(.hero-bg):not(.hero-overlay):not(.hero-nav) {
+      position: relative; z-index: 2;
+    }
+    /* Flèches de navigation hero */
+    .hero-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      z-index: 3;
+      width: 50px; height: 80px;
+      background: rgba(0,0,0,0.2);
+      border: none;
+      color: white; font-size: 1.4rem;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s;
+    }
+    .hero-nav:hover { background: rgba(0,0,0,0.4); transform: translateY(-50%); }
+    .hero-nav.prev { left: 0; border-radius: 0 8px 8px 0; }
+    .hero-nav.next { right: 0; border-radius: 8px 0 0 8px; }
+    @media (max-width: 600px) {
+      .hero-nav { width: 38px; height: 60px; font-size: 1.1rem; }
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,212,170,0.2);
+      border: 1px solid rgba(0,212,170,0.5);
+      color: var(--gold-light);
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      padding: 6px 18px; border-radius: 50px;
+      margin-bottom: 20px;
+      animation: fadeUp 0.8s ease both;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      color: var(--white);
+      line-height: 1.15;
+      max-width: 760px;
+      margin-bottom: 18px;
+      animation: fadeUp 0.8s 0.1s ease both;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .hero h1 em { color: var(--gold-light); font-style: italic; }
+    .hero p {
+      color: rgba(255,255,255,0.9);
+      font-size: 1.1rem;
+      max-width: 560px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+      animation: fadeUp 0.8s 0.2s ease both;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.35);
+    }
+
+    /* ─── WIDGET LODGIFY HERO ─── */
+    .lodgify-search-wrapper {
+      max-width: 900px; width: 100%;
+      animation: fadeUp 0.8s 0.3s ease both;
+    }
+    #lodgify-search-bar { width: 100%; }
+
+    /* ─── STATS ─── */
+    .stats-bar {
+      background: var(--deep);
+      padding: 22px 48px;
+      display: flex; justify-content: center; gap: 60px; flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem; color: var(--gold-light); line-height: 1;
+    }
+    .stat-label { font-size: 0.78rem; color: rgba(255,255,255,0.6); margin-top: 3px; letter-spacing: 0.5px; }
+
+    /* ─── SECTION GÉNÉRIQUE ─── */
+    section { padding: 90px 48px; }
+    .section-tag {
+      display: inline-block;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--ocean);
+      background: rgba(26,122,74,0.1);
+      padding: 5px 14px; border-radius: 50px;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      color: var(--deep);
+      line-height: 1.2;
+      margin-bottom: 14px;
+    }
+    h2 em { color: var(--ocean); font-style: italic; }
+    .section-intro {
+      color: var(--text-mid);
+      font-size: 1.05rem;
+      line-height: 1.75;
+      max-width: 560px;
+      margin-bottom: 48px;
+    }
+
+    /* ─── BUNGALOWS GRID ─── */
+    #logements { background: var(--sand); }
+    .section-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px; margin-bottom: 44px; }
+    .filter-bar { display: flex; gap: 10px; flex-wrap: wrap; }
+    .filter-btn {
+      padding: 8px 18px; border-radius: 50px;
+      border: 1.5px solid #c0dde8;
+      background: transparent;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.85rem; font-weight: 600; color: var(--text-mid);
+      cursor: pointer; transition: all 0.2s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--ocean); border-color: var(--ocean); color: white;
+    }
+
+    .bungalows-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+    }
+    .bungalow-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      display: flex; flex-direction: column;
+    }
+    .bungalow-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(26,48,64,0.2); }
+    .card-img {
+      position: relative; height: 230px; overflow: hidden;
+    }
+    .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
+    .bungalow-card:hover .card-img img { transform: scale(1.06); }
+    .card-badge {
+      position: absolute; top: 14px; left: 14px;
+      background: var(--white);
+      color: var(--deep);
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 50px;
+    }
+    .card-fav {
+      position: absolute; top: 14px; right: 14px;
+      width: 34px; height: 34px; border-radius: 50%;
+      background: rgba(255,255,255,0.9);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .card-fav:hover { transform: scale(1.2); }
+    .card-body { padding: 20px 22px 22px; flex: 1; display: flex; flex-direction: column; }
+    .card-location { font-size: 0.78rem; color: var(--text-light); font-weight: 600; letter-spacing: 0.5px; margin-bottom: 5px; display: flex; align-items: center; gap: 4px; }
+    .card-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--deep); margin-bottom: 10px; line-height: 1.3; }
+    .card-amenities { display: flex; gap: 12px; margin-bottom: 14px; flex-wrap: wrap; }
+    .amenity { font-size: 0.78rem; color: var(--text-mid); display: flex; align-items: center; gap: 4px; }
+    .card-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; border-top: 1px solid #e8f0f5; margin-top: auto; gap: 10px; flex-wrap: wrap; }
+    .card-cta-info { font-size: 0.85rem; color: var(--text-mid); }
+    .card-price-mini { display: flex; align-items: baseline; gap: 4px; }
+    .card-price-mini .amount-mini {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: var(--deep);
+      font-weight: 700;
+    }
+    .card-price-mini .per-mini {
+      font-size: 0.78rem;
+      color: var(--text-light);
+    }
+    .btn-reserve {
+      background: linear-gradient(135deg, var(--ocean), var(--gold));
+      color: white; border: none;
+      padding: 9px 20px; border-radius: 50px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.85rem; font-weight: 700;
+      cursor: pointer; transition: all 0.2s;
+    }
+    .btn-reserve:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(240,165,0,0.35); }
+
+
+    /* ─── DESTINATIONS ─── */
+      border-radius: 14px; overflow: hidden;
+      position: relative; cursor: pointer;
+      aspect-ratio: 3/2;
+    }
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(26,48,64,0.85) 0%, transparent 60%);
+      display: flex; flex-direction: column; justify-content: flex-end;
+      padding: 20px 18px;
+    }
+
+    /* ─── TÉMOIGNAGES ─── */
+    #avis { background: var(--sand); }
+    .avis-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+    .avis-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 28px 26px;
+      box-shadow: var(--shadow);
+    }
+    .avis-stars { color: #f0a500; font-size: 1rem; margin-bottom: 12px; }
+    .avis-text { font-size: 0.95rem; line-height: 1.7; color: var(--text-mid); margin-bottom: 18px; font-style: italic; }
+    .avis-author { display: flex; align-items: center; gap: 12px; }
+    .avis-avatar {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--ocean), var(--gold));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; color: white; font-weight: 700;
+    }
+    .avis-name { font-weight: 700; font-size: 0.9rem; color: var(--deep); }
+    .avis-date { font-size: 0.75rem; color: var(--text-light); }
+
+    /* ─── CONTACT ─── */
+    #contact {
+      background: linear-gradient(135deg, #e0f0f5 0%, #d0e8f4 100%);
+    }
+      width: 34px; height: 34px; border-radius: 50%;
+      background: var(--ocean); color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 0.9rem; flex-shrink: 0;
+    }
+    .resa-form {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+    .form-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--deep); margin-bottom: 22px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: var(--text-light); margin-bottom: 6px; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%; padding: 12px 16px;
+      border: 1.5px solid #d0e4ee;
+      border-radius: 10px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.95rem; color: var(--text-dark);
+      background: #f5f9fc;
+      outline: none; transition: border-color 0.2s;
+      resize: vertical;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--lagon); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .btn-submit {
+      width: 100%;
+      background: linear-gradient(135deg, var(--ocean), var(--gold));
+      color: white; border: none;
+      padding: 15px; border-radius: 12px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      cursor: pointer; transition: all 0.2s;
+      margin-top: 8px;
+    }
+    .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(240,165,0,0.35); }
+    .form-note { font-size: 0.75rem; color: var(--text-light); text-align: center; margin-top: 10px; }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--deep);
+      color: rgba(255,255,255,0.7);
+      padding: 60px 48px 30px;
+    }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 48px; }
+    .footer-brand .nav-logo { font-size: 1.3rem; display: block; margin-bottom: 14px; }
+    .footer-brand p { font-size: 0.87rem; line-height: 1.7; max-width: 280px; }
+    .footer-col h4 { color: var(--gold-light); font-size: 0.78rem; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+    .footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.88rem; transition: color 0.2s; }
+    .footer-col a:hover { color: var(--gold-light); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 0.8rem; }
+    .footer-socials { display: flex; gap: 12px; }
+    .social-btn {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; cursor: pointer; text-decoration: none;
+      transition: background 0.2s;
+    }
+    .social-btn:hover { background: var(--gold); }
+
+    
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.92); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    .reveal {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      nav { padding: 16px 24px; }
+      nav.scrolled { padding: 10px 24px; }
+      .nav-links { display: none; }
+      .nav-burger { display: flex; }
+      section { padding: 64px 24px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .stats-bar { gap: 30px; padding: 20px 24px; }
+    }
+    @media (max-width: 600px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .bungalows-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .modal-body { padding: 22px 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo" style="display:flex;align-items:center;gap:14px;text-decoration:none;">
+    <svg width="58" height="58" viewBox="0 0 100 100" style="flex-shrink:0;">
+      <circle cx="50" cy="50" r="48" fill="#1a3040" stroke="#f0a500" stroke-width="1.5"/>
+      <circle cx="50" cy="38" r="14" fill="#f0a500" opacity="0.9"/>
+      <circle cx="50" cy="38" r="10" fill="#f7c948"/>
+      <circle cx="50" cy="38" r="6" fill="#ffe066"/>
+      <path d="M25 68 L42 40 Q46 34 50 38 L55 44 Q57 42 59 44 L75 65" fill="#5d7a3a"/>
+      <path d="M30 68 L44 46 Q47 40 50 44 L60 58" fill="#3d5a25" opacity="0.7"/>
+      <path d="M15 70 Q30 62 45 70 Q60 78 75 70 Q85 64 95 70" fill="none" stroke="#48cae4" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M10 76 Q25 68 40 76 Q55 84 70 76 Q85 68 100 76" fill="none" stroke="#48cae4" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+      <path d="M28 28 Q31 25 34 27" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+      <path d="M66 30 Q69 27 72 29" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+    </svg>
+    <span style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.2;">Entre la Caraïbe<br><span style="color:#fcd34d;font-style:italic;font-size:1.1rem;">et la Pelée</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#logements">Nos logements</a></li>
+    <li><a href="blog.html">Explorer le Nord</a></li>
+    <li><a href="#avis">Avis</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="nav-burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero" id="accueil">
+  <!-- Carrousel d'images de fond -->
+  <div class="hero-bg" id="hero-bg">
+    <img src="vue_bungalow.png" alt="Vue aérienne des bungalows au Carbet" />
+    <img src="https://l.icdbcdn.com/oh/1e771ae6-3878-4c2b-b6de-1918b097d602.jpg?w=1400" alt="Vue mer depuis la terrasse du bungalow" />
+    <img src="https://l.icdbcdn.com/oh/c49cc493-ed50-48c8-9147-730824ea3525.jpg?w=1400" alt="Vue de la Montagne Pelée depuis le bungalow" />
+    <img src="https://l.icdbcdn.com/oh/e3a8e2c4-8782-460f-82b1-0d5a55c9d861.jpg?w=1400" alt="Terrasse avec vue mer au Carbet" />
+    <img src="https://l.icdbcdn.com/oh/61a4b045-e857-435f-b74a-e4e489f822c3.jpg?w=1400" alt="Vue sur les Pitons depuis le bungalow" />
+  </div>
+  <div class="hero-overlay"></div>
+  <!-- Flèches de navigation hero -->
+  <button class="hero-nav prev" onclick="heroNav(-1)">❮</button>
+  <button class="hero-nav next" onclick="heroNav(1)">❯</button>
+  <div class="hero-eyebrow">🌋 Nord Martinique · Entre la Caraïbe et la Pelée</div>
+  <h1>Séjournez entre <em>la Caraïbe</em><br>et la <em>Montagne Pelée</em></h1>
+  <p>12 bungalows et chambres de charme au Carbet, Morne-Rouge et Saint-Pierre. Des Caraïbes au sommet du volcan — la Martinique authentique.</p>
+
+  <!-- ─── LODGIFY SEARCH BAR ─── -->
+  <div class="lodgify-search-wrapper">
+    <div
+      id="lodgify-search-bar"
+      data-website-id="403252"
+      data-language-code="fr"
+      data-search-page-url='https://lesbungalowsdesaintececile.com/fr/toutes-les-proprietes'
+      data-dates-check-in-label='Arrivée'
+      data-dates-check-out-label='Départ'
+      data-guests-counter-label='Invités'
+      data-guests-input-singular-label='{{NumberOfGuests}} invité'
+      data-guests-input-plural-label='{{NumberOfGuests}} invités'
+      data-location-input-label='Emplacement'
+      data-search-button-label='Rechercher'
+      data-dates-input-min-stay-tooltip-text='{"one":"Minimum {minStay} nuit","other":"Minimum de {minStay} nuits"}'
+      data-guests-breakdown-label='Invités'
+      data-adults-label='{"one":"adulte","other":"adultes"}'
+      data-adults-description='Âges {minAge} ou plus'
+      data-children-label='{"one":"enfant","other":"enfants"}'
+      data-children-description='Âges {minAge} - {maxAge}'
+      data-children-not-allowed-label='Non adapté aux enfants'
+      data-infants-label='{"one":"b\u00e9b\u00e9","other":"b\u00e9b\u00e9s"}'
+      data-infants-description='Moins de {maxAge}'
+      data-infants-not-allowed-label='Non adapté aux bébés'
+      data-pets-label='{"one":"animal de compagnie","other":"animaux de compagnie"}'
+      data-pets-not-allowed-label='Non autorisé'
+      data-done-label='Terminé'
+      data-new-tab="true"
+      data-version="stable"
+      data-has-guests-breakdown
+    ></div>
+  </div>
+</section>
+
+<!-- ─── STATS ─── -->
+<div class="stats-bar">
+  <div class="stat">
+    <div class="stat-num">12</div>
+    <div class="stat-label">Logements disponibles</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">5.0★</div>
+    <div class="stat-label">Note moyenne</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">500+</div>
+    <div class="stat-label">Voyageurs accueillis</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">3</div>
+    <div class="stat-label">Communes du Nord</div>
+  </div>
+</div>
+
+<!-- ─── LOGEMENTS ─── -->
+<section id="logements">
+  <div class="section-header reveal">
+    <div>
+      <span class="section-tag">Nos logements</span>
+      <h2>Trouvez votre <em>havre</em> de paix</h2>
+      <p class="section-intro">De la plage du Carbet aux flancs de la Montagne Pelée, chacun de nos 12 logements vous promet une expérience martiniquaise authentique.</p>
+    </div>
+    <div class="filter-bar">
+      <button class="filter-btn active" onclick="filterCards(this,'tous')">🌴 Tous (12)</button>
+      <button class="filter-btn" onclick="filterCards(this,'carbet')">🌊 Le Carbet (6)</button>
+      <button class="filter-btn" onclick="filterCards(this,'morne')">🌋 Morne-Rouge (5)</button>
+      <button class="filter-btn" onclick="filterCards(this,'stpierre')">🏖 Saint-Pierre (1)</button>
+    </div>
+  </div>
+
+  <div class="bungalows-grid reveal" id="bungalows-grid">
+    <!-- Cards générées dynamiquement par JS -->
+  </div>
+</section>
+
+<!-- ─── AVIS ─── -->
+<section id="avis">
+  <div style="text-align:center; margin-bottom:44px;" class="reveal">
+    <span class="section-tag">Témoignages</span>
+    <h2>Ce que disent <em>nos voyageurs</em></h2>
+    <p class="section-intro" style="margin:0 auto;">100% d'avis 5 étoiles — nos visiteurs parlent pour nous.</p>
+  </div>
+  <div class="avis-grid reveal">
+
+    <div class="avis-card">
+      <div class="avis-stars">★★★★★</div>
+      <p class="avis-text">"Ce bungalow est un petit bijou. Tout en bois, extrêmement bien entretenu et propre, on s'y sent chez soi dès que l'on passe le seuil. La cuisine est fonctionnelle et complète, avec vue sur la mer. Merci Meloïca, tout était parfait."</p>
+      <div class="avis-author">
+        <div class="avis-avatar">A</div>
+        <div>
+          <div class="avis-name">Agnès</div>
+          <div class="avis-date">Mars 2026 · Bungalow Pélican · Le Carbet</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="avis-card">
+      <div class="avis-stars">★★★★★</div>
+      <p class="avis-text">"Nous avons adoré notre séjour dans cette maison partagée. La maison est spacieuse, bien aménagée, l'ambiance est sympa et le cadre est sublime et paisible. À recommander sans modération pour profiter du nord de la Martinique !"</p>
+      <div class="avis-author">
+        <div class="avis-avatar">J</div>
+        <div>
+          <div class="avis-name">Julie</div>
+          <div class="avis-date">Mars 2026 · Chambre Ylang Ylang · Morne-Rouge</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="avis-card">
+      <div class="avis-stars">★★★★★</div>
+      <p class="avis-text">"Nous avons passé 3 nuits dans le bungalow et nous avons adoré notre séjour ! Le cadre était dépaysant, la vue mer et l'accès direct à la plage sont un véritable plus ! Les hôtes sont réactifs et très gentils !"</p>
+      <div class="avis-author">
+        <div class="avis-avatar">🌊</div>
+        <div>
+          <div class="avis-name">Voyageur vérifié</div>
+          <div class="avis-date">Mars 2026 · Bungalow Barracuda · Le Carbet</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="avis-card">
+      <div class="avis-stars">★★★★★</div>
+      <p class="avis-text">"Nous avons été dans les premiers vacanciers à profiter d'un des merveilleux bungalows multicolores. Pratiquement sur le sable, très bien agencé et équipé. Meloïca est très réactive. Un lieu idéal pour des vacances en couple."</p>
+      <div class="avis-author">
+        <div class="avis-avatar">G</div>
+        <div>
+          <div class="avis-name">Guy</div>
+          <div class="avis-date">Février 2026 · Bungalow Balaou · Le Carbet</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="avis-card">
+      <div class="avis-stars">★★★★★</div>
+      <p class="avis-text">"Très beau séjour au calme au Morne-Rouge. J'ai beaucoup apprécié la confiance de Meloïca lors de notre arrivée et départ. Nous nous sommes sentis libres et autonomes. Merci pour tout, nous n'avons manqué de rien."</p>
+      <div class="avis-author">
+        <div class="avis-avatar">C</div>
+        <div>
+          <div class="avis-name">Voyageur vérifié</div>
+          <div class="avis-date">Mars 2026 · Bungalow à flanc de montagne · Morne-Rouge</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="avis-card">
+      <div class="avis-stars">★★★★★</div>
+      <p class="avis-text">"Nous avons été ravis de nos deux nuits, le logement est confortable, la vue de la terrasse magnifique et le calme très appréciable. Nous recommandons !"</p>
+      <div class="avis-author">
+        <div class="avis-avatar">🌋</div>
+        <div>
+          <div class="avis-name">Voyageur vérifié</div>
+          <div class="avis-date">Mars 2026 · Chambre Roucou · Morne-Rouge</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <div style="max-width:600px;margin:0 auto;" class="reveal">
+    <div style="text-align:center;margin-bottom:32px;">
+      <span class="section-tag">Contact</span>
+      <h2>Une question ? <em>Écrivez-nous</em></h2>
+      <p class="section-intro" style="margin:0 auto;">Pour toute question, demande de groupe, long séjour ou demande spéciale, n'hésitez pas.</p>
+    </div>
+    <div class="resa-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Prénom</label>
+          <input type="text" placeholder="Jean" />
+        </div>
+        <div class="form-group">
+          <label>Nom</label>
+          <input type="text" placeholder="Dupont" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" placeholder="jean@exemple.com" />
+      </div>
+      <div class="form-group">
+        <label>Téléphone</label>
+        <input type="tel" placeholder="+596 696 XX XX XX" />
+      </div>
+      <div class="form-group">
+        <label>Logement concerné (optionnel)</label>
+        <select id="contact-logement">
+          <option>-- Sélectionnez (optionnel) --</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Votre message</label>
+        <textarea rows="4" placeholder="Questions, demandes spéciales..."></textarea>
+      </div>
+      <button class="btn-submit">🌴 Envoyer ma demande</button>
+      <p class="form-note">🔒 Réponse sous 24h</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;margin-bottom:14px;">
+        <svg width="40" height="40" viewBox="0 0 100 100" style="flex-shrink:0;">
+          <circle cx="50" cy="50" r="48" fill="#1a3040" stroke="#f0a500" stroke-width="1.5"/>
+          <circle cx="50" cy="38" r="14" fill="#f0a500" opacity="0.9"/>
+          <circle cx="50" cy="38" r="10" fill="#f7c948"/>
+          <circle cx="50" cy="38" r="6" fill="#ffe066"/>
+          <path d="M25 68 L42 40 Q46 34 50 38 L55 44 Q57 42 59 44 L75 65" fill="#5d7a3a"/>
+          <path d="M30 68 L44 46 Q47 40 50 44 L60 58" fill="#3d5a25" opacity="0.7"/>
+          <path d="M15 70 Q30 62 45 70 Q60 78 75 70 Q85 64 95 70" fill="none" stroke="#48cae4" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M10 76 Q25 68 40 76 Q55 84 70 76 Q85 68 100 76" fill="none" stroke="#48cae4" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+        </svg>
+        <span style="font-family:'Playfair Display',serif;font-size:1.15rem;color:#fff;line-height:1.15;">Entre la Caraïbe<br><span style="color:#fcd34d;font-style:italic;font-size:0.9rem;">et la Pelée</span></span>
+      </a>
+      <p>12 hébergements de charme entre la mer des Caraïbes et la Montagne Pelée. Votre escapade caribéenne authentique au Nord Martinique.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Logements</h4>
+      <ul>
+        <li><a href="#logements">Bungalows plage</a></li>
+        <li><a href="#logements">Hébergements nature</a></li>
+        <li><a href="#logements">Maison Saint-Pierre</a></li>
+        <li><a href="#logements">Tous les logements</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Informations</h4>
+      <ul>
+        <li><a href="#">Conditions générales</a></li>
+        <li><a href="#">Politique d'annulation</a></li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#contact">Nous contacter</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Entre la Caraïbe et la Pelée · Tous droits réservés</span>
+    <div class="footer-socials">
+      <a href="#" class="social-btn">📘</a>
+      <a href="#" class="social-btn">📸</a>
+      <a href="#" class="social-btn">🐦</a>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+</div>
+
+<!-- ─── LODGIFY : Scripts ─── -->
+<script src="https://app.lodgify.com/portable-search-bar/stable/renderPortableSearchBar.js" defer></script>
+
+<script>
+  /* ───────────────────────────────────────────────
+   * DONNÉES DES 12 LOGEMENTS
+   * Pour modifier : remplace simplement les champs.
+   * Pour swapper la photo : change le champ "img".
+   * ─────────────────────────────────────────────── */
+  const LODGIFY_WEBSITE_ID = "403252";
+  const LODGIFY_SLUG = "lesbungalowsdesaintececile";
+
+  const bungalows = [
+    {
+      id: "760730",
+      nom: "Bungalow sur la plage : Balaou",
+      lieu: "Le Carbet",
+      type: "carbet",
+      img: "https://l.icdbcdn.com/oh/cd4aacc0-0f6e-478e-980f-98592b0495f1.jpg?w=1400",
+      minPrice: 95,
+      desc: `Détendez-vous dans ce logement unique et tranquille, situé directement sur la grande plage du Carbet
+
+Le logement est composé d'une chambre avec sa salle de bain, une cuisine et une terrasse. Accès direct sur la plage.`,
+      amenities: ["🛏 1 chambre", "👤 2-4 personnes", "☕ Terrasse", "🌿 Jardin tropical", "🏖 Plage à proximité"]
+    },
+    {
+      id: "760726",
+      nom: "Bungalow sur la plage : Barracuda",
+      lieu: "Le Carbet",
+      type: "carbet",
+      img: "https://l.icdbcdn.com/oh/18d9460b-90cd-43d9-873f-56a7d2d663c4.jpg?w=1400",
+      minPrice: 110,
+      desc: `Détendez-vous dans ce logement unique et tranquille, situé directement sur la grande plage du Carbet
+
+UNIQUE: vous descendez vos 4 marches de votre joli bungalow en bois, vous faites quelques pas dans le jardin, vous ouvrez votre barrière et vous vous trouvez directement sur la plage.`,
+      amenities: ["🛏 1 chambre", "👤 2-4 personnes", "☕ Terrasse", "🌿 Jardin tropical", "🏖 Plage à proximité"]
+    },
+    {
+      id: "760727",
+      nom: "Bungalow sur la plage : Coulirou",
+      lieu: "Le Carbet",
+      type: "carbet",
+      img: "https://l.icdbcdn.com/oh/ebb53cb1-b2c2-425c-9d78-954ca99d3c00.jpg?w=1400",
+      minPrice: 100,
+      desc: `Détendez-vous dans ce logement unique et tranquille, situé directement sur la grande plage du Carbet.
+
+UNIQUE: vous descendez vos 4 marches de votre joli bungalow en bois, vous faites quelques pas dans le jardin, vous ouvrez votre barrière et vous vous trouvez directement sur la plage.`,
+      amenities: ["👤 2-4 personnes", "☕ Terrasse", "🌿 Jardin tropical", "🏖 Plage à proximité"]
+    },
+    {
+      id: "760728",
+      nom: "Bungalow sur la plage : Frégate",
+      lieu: "Le Carbet",
+      type: "carbet",
+      img: "https://l.icdbcdn.com/oh/5f41d7ef-a855-43be-aaeb-aca5c3db54b0.jpg?w=1400",
+      minPrice: 105,
+      desc: `Détendez-vous dans ce logement unique et tranquille, situé directement sur la grande plage du Carbet
+
+UNIQUE: vous descendez vos 4 marches de votre joli bungalow en bois, vous faites quelques pas dans le jardin, vous ouvrez votre barrière et vous vous trouvez directement sur la plage.`,
+      amenities: ["🛏 1 chambre", "👤 2-4 personnes", "☕ Terrasse", "🌿 Jardin tropical", "🏖 Plage à proximité"]
+    },
+    {
+      id: "760729",
+      nom: "Bungalow sur la plage : Pélican",
+      lieu: "Le Carbet",
+      type: "carbet",
+      img: "https://l.icdbcdn.com/oh/e2e6c10b-2400-4c36-a39c-5d014a4056c8.jpg?w=1400",
+      minPrice: 99,
+      desc: `Détendez-vous dans ce logement unique et tranquille, situé directement sur la grande plage du Carbet.
+
+UNIQUE: vous descendez vos 4 marches de votre joli bungalow en bois, vous faites quelques pas dans le jardin, vous ouvrez votre barrière et vous vous trouvez directement sur la plage.`,
+      amenities: ["👤 2-4 personnes", "☕ Terrasse", "🌿 Jardin tropical", "🏖 Plage à proximité"]
+    },
+    {
+      id: "760725",
+      nom: "Bungalow sur la plage : Thazard",
+      lieu: "Le Carbet",
+      type: "carbet",
+      img: "https://l.icdbcdn.com/oh/480819f4-0edb-4fa6-9ffc-0f8d7fa4da6d.jpg?w=1400",
+      minPrice: 99,
+      desc: `Détendez-vous dans ce logement unique et tranquille, situé directement sur la grande plage du Carbet
+
+UNIQUE: vous descendez vos 4 marches de votre joli bungalow en bois, vous faites quelques pas dans le jardin, vous ouvrez votre barrière et vous vous trouvez directement sur la plage.`,
+      amenities: ["🛏 1 chambre", "👤 2-4 personnes", "☕ Terrasse", "🌿 Jardin tropical", "🏖 Plage à proximité"]
+    },
+    {
+      id: "789363",
+      nom: "La maison sur la plage",
+      lieu: "Saint-Pierre",
+      type: "stpierre",
+      img: "https://l.icdbcdn.com/oh/5bde69e2-ba23-46ab-ac99-6a24978086fd.jpg?w=1400",
+      minPrice: 149,
+      desc: `Cette maison au coeur de Saint Pierre (ville d'Art et d'Histoire) donne directement sur la plage au rez de chaussée, de sa terrasse au premier vous pouvez admirer le mouillage avec de nombreux voiliers.
+La mer y est limpide et calme ce qui rend le bain unique.`,
+      amenities: ["👤 2-4 personnes", "☕ Terrasse", "🏖 Plage à proximité"]
+    },
+    {
+      id: "433880",
+      nom: "Bungalow à flanc de colline",
+      lieu: "Morne-Rouge",
+      type: "morne",
+      img: "https://l.icdbcdn.com/oh/2ec4ccfe-30b3-423e-836d-65001b294669.jpg?w=1400",
+      minPrice: 53,
+      desc: `Bungalow créole en pleine nature composé d'une chambre avecsalle de bain.
+
+Une grande terrasse extérieure avec sa cuisine équipée complète ce logement. 
+
+Entouré de 5000 m2 de jardin fleuri et entretenu au pied des Pitons et de la Montagne Pelée, c'est le grand calme !`,
+      amenities: ["🛏 1 chambre", "👤 2-4 personnes", "☕ Terrasse", "🌋 Vue montagne", "🌿 Jardin tropical", "🌿 Pleine nature"]
+    },
+    {
+      id: "433881",
+      nom: "Bungalow à flanc de montagne",
+      lieu: "Morne-Rouge",
+      type: "morne",
+      img: "https://l.icdbcdn.com/oh/b4139a4b-213a-4fff-84b0-b1b154c5346e.jpg?w=1400",
+      minPrice: 59,
+      desc: `Bungalow créole en pleine nature composé d'une chambre avecsalle de bain. 
+
+Une grande terrasse extérieure avec sa cuisine équipée complète ce logement. 
+
+Entouré de 5000 m2 de jardin fleuri et entretenu au pied des Pitons et de la Montagne Pelée, c'est le grand calme !`,
+      amenities: ["🛏 1 chambre", "👤 2-4 personnes", "☕ Terrasse", "🌋 Vue montagne", "🌿 Jardin tropical", "🌿 Pleine nature"]
+    },
+    {
+      id: "433879",
+      nom: "Chambre Roucou en pleine nature, vue Mont Pelée",
+      lieu: "Morne-Rouge",
+      type: "morne",
+      img: "https://l.icdbcdn.com/oh/943876ef-e24e-405a-969e-2bf171b27e5e.jpg?w=1400",
+      minPrice: 40,
+      desc: `Chambre spacieuseet salle de bain privée dans une maison neuve en pleine nature.
+
+Au pied des Pitons et de la Montagne Pelée, c'est le grand calme !
+
+Le meilleur point de départ avancé de vos randonnées.`,
+      amenities: ["🛏 1 chambre", "👤 2-4 personnes", "☕ Terrasse", "🌋 Vue montagne", "🌿 Pleine nature", "🏖 Plage à proximité"]
+    },
+    {
+      id: "433882",
+      nom: "Chambre ylang ylang en pleine nature",
+      lieu: "Morne-Rouge",
+      type: "morne",
+      img: "https://l.icdbcdn.com/oh/e4ebd2e9-c0b2-4239-8798-60546c38dccd.jpg?w=1400",
+      minPrice: 40,
+      desc: `Chambrespacieuseet salle de bain privéedans une maison neuve en pleine nature.
+
+Au pied des Pitons et de la Montagne Pelée, c'est le grand calme !
+
+Le meilleur point de départ avancé de vos randonnées.`,
+      amenities: ["👤 2-4 personnes", "☕ Terrasse", "🌋 Vue montagne", "🌿 Pleine nature", "🏖 Plage à proximité"]
+    },
+    {
+      id: "433878",
+      nom: "Le relais de la montagne Pelée",
+      lieu: "Morne-Rouge",
+      type: "morne",
+      img: "https://l.icdbcdn.com/oh/1b03e259-28fa-49a4-a6e8-68a668156d72.jpg?w=1400",
+      minPrice: 59,
+      desc: `Bienvenue dans notre charmant bungalow au pied de la Montagne Pelée, où la tranquillité et la nature se mêlent pour offrir un véritable paradis !
+
+Notre logement, réservé pour deux adultes se compose de 2 chambres confortables pour des nuits paisibles, ainsi qu'une salle de bain attenante aux chambres.`,
+      amenities: ["🛏 2 chambres", "👤 2 personnes", "☕ Terrasse", "🌋 Vue montagne", "🏖 Plage à proximité", "🅿️ Parking"]
+    }
+  ];
+
+
+  /* ─── PHOTOS PAR LOGEMENT (depuis l'API Lodgify) ─── */
+  const PHOTOS_MAP = {
+    "433878": ["https://l.icdbcdn.com/oh/eb4c98fd-7715-4183-a618-ede6465b1031.jpg?w=1400", "https://l.icdbcdn.com/oh/9c68ae63-44d4-461b-b3f7-4371b3bfee69.jpg?w=1400", "https://l.icdbcdn.com/oh/6f407554-c22b-40e7-972a-01b9488af92c.jpg?w=1400", "https://l.icdbcdn.com/oh/b7f6f827-730a-45f3-b598-5a5fa4befa07.jpg?w=1400", "https://l.icdbcdn.com/oh/6ae5c1bd-ecd0-4c40-8af8-9074b387022b.jpg?w=1400", "https://l.icdbcdn.com/oh/781df5b2-a788-4d87-97d3-fde5bc27e69b.jpg?w=1400", "https://l.icdbcdn.com/oh/946ffcd5-1b15-4804-9544-70e0d3af0796.jpg?w=1400", "https://l.icdbcdn.com/oh/24f65c67-bde2-4be7-bab9-5dfa06ed40b9.jpg?w=1400", "https://l.icdbcdn.com/oh/5ade4ee0-ff71-4264-85e8-cc5ecc575922.jpg?w=1400", "https://l.icdbcdn.com/oh/5ebc94f1-6491-4207-b581-3dddc1b6357b.jpg?w=1400"],
+    "433879": ["https://l.icdbcdn.com/oh/cb32acb4-9a75-4c33-89ab-59d06462e01c.jpg?w=1400", "https://l.icdbcdn.com/oh/8cb1c97b-4a6d-4e2f-8d20-e3d9adf1650c.jpg?w=1400", "https://l.icdbcdn.com/oh/02571d75-e588-48fa-98ac-a756ace9b152.jpg?w=1400", "https://l.icdbcdn.com/oh/d4360d83-b419-449e-8c2e-2e9017ce2e9b.jpg?w=1400", "https://l.icdbcdn.com/oh/8eedefde-3381-4b7d-b0ee-38c86c5d3fef.jpg?w=1400", "https://l.icdbcdn.com/oh/5ba7c8fd-23cf-4601-99af-4d4f13ede87b.jpg?w=1400", "https://l.icdbcdn.com/oh/baa740d8-cbaf-4af1-baa9-30814c1b2f93.jpg?w=1400", "https://l.icdbcdn.com/oh/d5dd2d7d-a24a-41c6-9625-abe53cc598c0.jpg?w=1400", "https://l.icdbcdn.com/oh/458ad376-d492-4ea7-92b8-44e41e62f37e.jpg?w=1400", "https://l.icdbcdn.com/oh/2c3af9f8-69a0-4041-97db-e0db267c6917.jpg?w=1400"],
+    "433880": ["https://l.icdbcdn.com/oh/c49cc493-ed50-48c8-9147-730824ea3525.jpg?w=1400", "https://l.icdbcdn.com/oh/12bf84e8-6ea1-49f6-b58d-f9b81400658d.jpg?w=1400", "https://l.icdbcdn.com/oh/b688f963-e963-43f3-bc97-105f54b1be3f.jpg?w=1400", "https://l.icdbcdn.com/oh/bc1a1591-a9d9-4db6-b59a-210f7442a89b.jpg?w=1400", "https://l.icdbcdn.com/oh/811102d0-550c-464c-ad79-7d6659a12653.jpg?w=1400", "https://l.icdbcdn.com/oh/c4d77405-bd51-4959-9c12-47e3cd0e9078.jpg?w=1400", "https://l.icdbcdn.com/oh/ec5c171e-affd-4ef6-a072-f082bf7dc153.jpg?w=1400", "https://l.icdbcdn.com/oh/4b7500d6-6785-45c8-b8ce-d3e8f9ae14d3.jpg?w=1400", "https://l.icdbcdn.com/oh/33739610-c27e-4faf-a754-d5e280a24dc8.jpg?w=1400", "https://l.icdbcdn.com/oh/4c42d561-ae0f-4a7a-af18-1c857291f781.jpg?w=1400"],
+    "433881": ["https://l.icdbcdn.com/oh/b9a4b3bc-52c1-4fe1-b9af-640c04bff12c.jpg?w=1400", "https://l.icdbcdn.com/oh/ef28b587-4047-4541-ad4b-d408ecf582ea.jpg?w=1400", "https://l.icdbcdn.com/oh/61a4b045-e857-435f-b74a-e4e489f822c3.jpg?w=1400", "https://l.icdbcdn.com/oh/c9f5b511-1351-48e9-885a-8012f91bdebd.jpg?w=1400", "https://l.icdbcdn.com/oh/413588b0-b916-440e-934f-b972af31f8b8.jpg?w=1400", "https://l.icdbcdn.com/oh/de8fa2b6-f100-472a-bfca-610c8ce179f5.jpg?w=1400", "https://l.icdbcdn.com/oh/ac30518f-88a6-491e-929d-391c860aa8e2.jpg?w=1400", "https://l.icdbcdn.com/oh/70138372-c671-438b-bf27-6d17b40f8a85.jpg?w=1400", "https://l.icdbcdn.com/oh/1f688866-4888-4dfd-9568-b5adebcebf83.jpg?w=1400", "https://l.icdbcdn.com/oh/a12cecce-5318-4d5b-9424-38879e4907a8.jpg?w=1400"],
+    "433882": ["https://l.icdbcdn.com/oh/58e6c7dd-8cdb-4242-91ed-69adcba31a2e.jpg?w=1400", "https://l.icdbcdn.com/oh/7a3c47af-ff42-406d-bbeb-98d2f7bb1f3c.jpg?w=1400", "https://l.icdbcdn.com/oh/12654c85-6a8a-4a4b-9cf0-cce1ccce2d4a.jpg?w=1400", "https://l.icdbcdn.com/oh/8c33b2d1-9f9f-4950-9c97-472fe4518cec.jpg?w=1400", "https://l.icdbcdn.com/oh/98f3dd1a-e512-40cb-b4b8-319e4a8f80d8.jpg?w=1400", "https://l.icdbcdn.com/oh/4d983d84-4f5d-4ade-8e48-b1d02ce8c1f4.jpg?w=1400", "https://l.icdbcdn.com/oh/466168c7-5809-45e7-a177-927b0da970f3.jpg?w=1400", "https://l.icdbcdn.com/oh/488cfcbc-fd1e-4d69-b363-6707023a3d2e.jpg?w=1400", "https://l.icdbcdn.com/oh/9e6bdd07-de6e-40d2-8ec6-b0946242c344.jpg?w=1400", "https://l.icdbcdn.com/oh/ab005fcc-5665-401c-81d2-56e1a9c3d5a7.jpg?w=1400"],
+    "760725": ["https://l.icdbcdn.com/oh/480819f4-0edb-4fa6-9ffc-0f8d7fa4da6d.jpg?w=1400", "https://l.icdbcdn.com/oh/ec413611-57e5-4157-9794-67b03b3ac4ea.jpg?w=1400", "https://l.icdbcdn.com/oh/b1771e14-fc96-45ed-af97-bccb5501e0fc.jpg?w=1400", "https://l.icdbcdn.com/oh/1e771ae6-3878-4c2b-b6de-1918b097d602.jpg?w=1400", "https://l.icdbcdn.com/oh/432da364-45f0-4477-b80b-e2d33219048d.jpg?w=1400", "https://l.icdbcdn.com/oh/946190d1-dc5c-4405-89bb-68f3739e38ae.jpg?w=1400", "https://l.icdbcdn.com/oh/8866ed36-4b26-48a3-bad5-cf747e2872f6.jpg?w=1400", "https://l.icdbcdn.com/oh/fe19bfec-87ff-478c-87d4-02ab79f68df4.jpg?w=1400", "https://l.icdbcdn.com/oh/22654837-bdaf-42c0-be5e-441155074562.jpg?w=1400", "https://l.icdbcdn.com/oh/4b2dcee8-f4ac-4d0c-9415-8939c9f3c6e8.jpg?w=1400"],
+    "760726": ["https://l.icdbcdn.com/oh/e3a8e2c4-8782-460f-82b1-0d5a55c9d861.jpg?w=1400", "https://l.icdbcdn.com/oh/ae166a17-59f8-4528-b659-95411e6aca20.jpg?w=1400", "https://l.icdbcdn.com/oh/53afb23f-bbb8-414d-a0fd-3f331e8f3f1e.jpg?w=1400", "https://l.icdbcdn.com/oh/18d9460b-90cd-43d9-873f-56a7d2d663c4.jpg?w=1400", "https://l.icdbcdn.com/oh/00fd00eb-ba45-46d2-8aa5-2c9fcad15ca4.jpg?w=1400", "https://l.icdbcdn.com/oh/7e431a5c-2d04-4a66-aa77-bf246ed15691.jpg?w=1400", "https://l.icdbcdn.com/oh/015d8722-9738-456c-9f07-8a5a6d6f992c.jpg?w=1400", "https://l.icdbcdn.com/oh/74085249-1021-422f-959d-2c193aee8987.jpg?w=1400", "https://l.icdbcdn.com/oh/4b242e1f-7d23-44aa-8a35-707000db5c96.jpg?w=1400", "https://l.icdbcdn.com/oh/e158c67f-6b67-42dd-9101-44fce61f399e.jpg?w=1400"],
+    "760727": ["https://l.icdbcdn.com/oh/ebb53cb1-b2c2-425c-9d78-954ca99d3c00.jpg?w=1400", "https://l.icdbcdn.com/oh/e202c13a-8f42-48c3-8baf-d08a20c13d16.jpg?w=1400", "https://l.icdbcdn.com/oh/372c5fb3-7c89-4c9f-8aa4-aeca78487a2c.jpg?w=1400", "https://l.icdbcdn.com/oh/05b51b97-1296-4cde-9b95-9fd2a8ad4909.jpg?w=1400", "https://l.icdbcdn.com/oh/6825351d-c090-4851-946e-945c42b6fae4.jpg?w=1400", "https://l.icdbcdn.com/oh/02a56c95-1d2e-4816-bab7-8677aee553d5.jpg?w=1400", "https://l.icdbcdn.com/oh/8fbba10f-730a-4b06-b5c9-f19aeb989706.jpg?w=1400", "https://l.icdbcdn.com/oh/6d4175fc-29bc-457d-8367-92e86d71e632.jpg?w=1400", "https://l.icdbcdn.com/oh/7e84ab3c-555c-4795-a757-b1bfa1ad82ed.jpg?w=1400", "https://l.icdbcdn.com/oh/227c3803-34b9-4829-90fe-cb7ea4b68ff9.jpg?w=1400"],
+    "760728": ["https://l.icdbcdn.com/oh/5f41d7ef-a855-43be-aaeb-aca5c3db54b0.jpg?w=1400", "https://l.icdbcdn.com/oh/68c57c32-d119-469a-8e6f-5b216d96fca8.jpg?w=1400", "https://l.icdbcdn.com/oh/689ae88e-35eb-4256-8303-e65ba098d7e5.jpg?w=1400", "https://l.icdbcdn.com/oh/59bbfb91-d5d7-4b3e-b1da-715e494a9087.jpg?w=1400", "https://l.icdbcdn.com/oh/ef197ec7-56ab-4606-aa42-7525e610fbd6.jpg?w=1400", "https://l.icdbcdn.com/oh/0293b013-bc5c-41bf-8a97-4909a82b48b9.jpg?w=1400", "https://l.icdbcdn.com/oh/6d0c7d1e-a859-4849-a87f-783a6e9fea15.jpg?w=1400", "https://l.icdbcdn.com/oh/5e0ffe0f-95ac-43e2-8243-ff610167af1b.jpg?w=1400", "https://l.icdbcdn.com/oh/8601cab2-238a-4c09-b7ae-78292e275c4b.jpg?w=1400", "https://l.icdbcdn.com/oh/79bd656e-4e62-4069-b76a-f3160535c53a.jpg?w=1400"],
+    "760729": ["https://l.icdbcdn.com/oh/e2e6c10b-2400-4c36-a39c-5d014a4056c8.jpg?w=1400", "https://l.icdbcdn.com/oh/0fc2b0fe-8274-4e80-9078-a0c54f194b7d.jpg?w=1400", "https://l.icdbcdn.com/oh/833be98f-b069-43bd-bd07-a41be0791c41.jpg?w=1400", "https://l.icdbcdn.com/oh/8326cf10-385c-4ac1-870e-286c60432704.jpg?w=1400", "https://l.icdbcdn.com/oh/7dd17b56-708a-4f14-ae3f-aa9731370284.jpg?w=1400", "https://l.icdbcdn.com/oh/80cbd1c8-6f74-4da4-883c-2a856dbd724e.jpg?w=1400", "https://l.icdbcdn.com/oh/d91c3d70-d467-4666-ab2c-5c68b301bddb.jpg?w=1400", "https://l.icdbcdn.com/oh/585c2474-057a-43a8-bdb3-e1305ff7a844.jpg?w=1400", "https://l.icdbcdn.com/oh/cf2d9f1b-5a9d-4d51-aa71-deb782b771cc.jpg?w=1400", "https://l.icdbcdn.com/oh/933e7760-226f-41d2-8f10-1a51671ca75d.jpg?w=1400"],
+    "760730": ["https://l.icdbcdn.com/oh/cd4aacc0-0f6e-478e-980f-98592b0495f1.jpg?w=1400", "https://l.icdbcdn.com/oh/7d3e1d28-3d63-4b2e-b991-e49a981a25b1.jpg?w=1400", "https://l.icdbcdn.com/oh/db2165ff-da6d-4b3d-ac24-d27757ee6903.jpg?w=1400", "https://l.icdbcdn.com/oh/fb94d745-f3db-4155-aede-565236423dbb.jpg?w=1400", "https://l.icdbcdn.com/oh/44d110e3-41ce-417d-857b-873b84ae8aa7.jpg?w=1400", "https://l.icdbcdn.com/oh/44daedcc-84cf-4777-bad5-b1187f7ade4f.jpg?w=1400", "https://l.icdbcdn.com/oh/aaa47951-51fc-435a-876b-74dc96cc7fd2.jpg?w=1400", "https://l.icdbcdn.com/oh/cc5a098f-dc4a-4aa2-9a6c-3b26c1dd24be.jpg?w=1400", "https://l.icdbcdn.com/oh/478c05bf-0c7a-4e77-9e97-86e296c43291.jpg?w=1400", "https://l.icdbcdn.com/oh/b7575a17-d7eb-47d6-8636-e318d0e170fd.jpg?w=1400"],
+    "789363": ["https://l.icdbcdn.com/oh/5bde69e2-ba23-46ab-ac99-6a24978086fd.jpg?w=1400", "https://l.icdbcdn.com/oh/ede97081-77e3-4d56-a8d2-b387e300c25b.jpg?w=1400", "https://l.icdbcdn.com/oh/7b7d4f92-e88c-4ad0-a29d-5c8a6084aa87.jpg?w=1400", "https://l.icdbcdn.com/oh/15f2e3b5-d3e5-4b7a-b2bf-883d984e7b4b.jpg?w=1400", "https://l.icdbcdn.com/oh/bd58e196-d052-4532-941a-6ca2bfed4f60.jpg?w=1400", "https://l.icdbcdn.com/oh/9cce81c2-067f-4b93-b381-577513377696.jpg?w=1400", "https://l.icdbcdn.com/oh/f9447836-dfa7-44e9-b4a5-4ed08caa4f92.jpg?w=1400", "https://l.icdbcdn.com/oh/65567f07-ab60-42d1-a3db-c2c90592ed42.jpg?w=1400", "https://l.icdbcdn.com/oh/f6cceb07-5b86-48f7-851e-22ee4b944ada.jpg?w=1400", "https://l.icdbcdn.com/oh/383386be-bc23-418a-b2cb-58d1518a3500.jpg?w=1400"],
+  };
+
+  /* ─── SLUG MAP : ID → page ─── */
+  const SLUG_MAP = {
+    "760730": "bungalow-sur-la-plage-balaou",
+    "760726": "bungalow-sur-la-plage-barracuda",
+    "760727": "bungalow-sur-la-plage-coulirou",
+    "760728": "bungalow-sur-la-plage-fregate",
+    "760729": "bungalow-sur-la-plage-pelican",
+    "760725": "bungalow-sur-la-plage-thazard",
+    "789363": "la-maison-sur-la-plage",
+    "433880": "bungalow-a-flanc-de-colline",
+    "433881": "bungalow-a-flanc-de-montagne",
+    "433879": "chambre-roucou-en-pleine-nature-vue-mont-pelee",
+    "433882": "chambre-ylang-ylang-en-pleine-nature",
+    "433878": "le-relais-de-la-montagne-pelee"
+  };
+
+  /* ─── GÉNÉRATION DES CARTES ─── */
+  function renderCards() {
+    const grid = document.getElementById('bungalows-grid');
+    grid.innerHTML = bungalows.map((b, i) => `
+      <a href="logements/${SLUG_MAP[b.id]}.html" class="bungalow-card reveal visible" data-type="${b.type}" style="text-decoration:none;color:inherit;">
+        <div class="card-img">
+          <img src="${b.img}" alt="${b.nom} - ${b.lieu} Martinique" loading="lazy" />
+          <div class="card-badge">${b.type === 'morne' ? '🌋' : b.type === 'stpierre' ? '🏖' : '🌊'} ${b.lieu}</div>
+        </div>
+        <div class="card-body">
+          <div class="card-location">📍 ${b.lieu}</div>
+          <div class="card-title">${b.nom}</div>
+          <div class="card-amenities">
+            ${b.amenities.slice(0, 3).map(a => `<span class="amenity">${a}</span>`).join('')}
+          </div>
+          <div class="card-footer">
+            <div class="card-price-mini">
+              ${b.minPrice ? `<span class="amount-mini">À partir de ${b.minPrice}€</span><span class="per-mini">/nuit</span>` : '<span class="card-cta-info">📅 Voir tarifs</span>'}
+            </div>
+            <span class="btn-reserve">Découvrir →</span>
+          </div>
+        </div>
+      </a>
+    `).join('');
+  }
+
+  /* ─── REMPLISSAGE DU SELECT DE CONTACT ─── */
+  function fillContactSelect() {
+    const sel = document.getElementById('contact-logement');
+    bungalows.forEach(b => {
+      const opt = document.createElement('option');
+      opt.value = `${b.nom} (${b.lieu})`;
+      opt.textContent = `${b.nom} – ${b.lieu}`;
+      sel.appendChild(opt);
+    });
+  }
+
+  
+
+  
+
+  
+
+  /* ─── HERO : carrousel slide avec navigation ─── */
+  const heroBg = document.getElementById('hero-bg');
+  const heroCount = document.querySelectorAll('#hero-bg img').length;
+  let heroCurrent = 0;
+  let heroTimer;
+
+  function heroGo(idx) {
+    heroCurrent = ((idx % heroCount) + heroCount) % heroCount;
+    heroBg.style.transform = `translateX(-${heroCurrent * 100}%)`;
+  }
+
+  function heroNav(dir) {
+    heroGo(heroCurrent + dir);
+    clearInterval(heroTimer);
+    heroTimer = setInterval(() => heroGo(heroCurrent + 1), 5000);
+  }
+
+  heroTimer = setInterval(() => heroGo(heroCurrent + 1), 5000);
+
+  /* ─── NAV SCROLL ─── */
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  /* ─── REVEAL au scroll ─── */
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+
+  /* ─── FILTRES ─── */
+  function filterCards(btn, type) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.bungalow-card').forEach(card => {
+      card.style.display = (type === 'tous' || card.dataset.type === type) ? 'flex' : 'none';
+    });
+  }
+
+  
+
+  /* ─── MENU MOBILE ─── */
+  function toggleMenu() {
+    const links = document.querySelector('.nav-links');
+    const isOpen = links.style.display === 'flex';
+    if (isOpen) {
+      links.style.display = 'none';
+    } else {
+      links.style.display = 'flex';
+      links.style.flexDirection = 'column';
+      links.style.position = 'fixed';
+      links.style.top = '64px';
+      links.style.left = '0'; links.style.right = '0';
+      links.style.background = 'rgba(26,48,64,0.97)';
+      links.style.padding = '20px 24px';
+      links.style.gap = '16px';
+    }
+  }
+
+  /* ─── INIT ─── */
+  renderCards();
+  fillContactSelect();
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  /* ─── CHARGEMENT DYNAMIQUE DEPUIS L'API LODGIFY ─── */
+  /* Le site s'affiche immédiatement avec les données en dur (fallback).
+     En arrière-plan, on récupère les données fraîches depuis l'API.
+     Si ça marche, on met à jour photos, descriptions, prix sans rechargement. */
+  (async function loadFreshData() {
+    try {
+      const res = await fetch('/api/data');
+      if (!res.ok) throw new Error(`API ${res.status}`);
+      const data = await res.json();
+
+      if (!data.bungalows || data.bungalows.length === 0) return;
+
+      /* Mise à jour du tableau bungalows */
+      bungalows.length = 0;
+      data.bungalows.forEach(b => bungalows.push(b));
+
+      /* Mise à jour du PHOTOS_MAP */
+      Object.keys(PHOTOS_MAP).forEach(k => delete PHOTOS_MAP[k]);
+      data.bungalows.forEach(b => {
+        if (b.photos && b.photos.length > 0) {
+          PHOTOS_MAP[b.id] = b.photos;
+        }
+      });
+
+      /* Re-rendu des cartes avec les données fraîches */
+      renderCards();
+      fillContactSelect();
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      console.log(`✅ Données Lodgify mises à jour (${data.count} logements, ${data.updated_at})`);
+    } catch (err) {
+      /* Pas grave : les données en dur sont toujours affichées */
+      console.log('ℹ️ API indisponible, utilisation des données en cache', err.message);
+    }
+  })();
+</script>
+</body>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) { window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; }); }
+    });
+  }
+</script>
+</html>

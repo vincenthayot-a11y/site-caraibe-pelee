@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explorer le Nord – Activités &amp; Découvertes en Martinique | Entre la Caraïbe et la Pelée</title>
+  <meta name="description" content="12 activités incontournables dans le nord de la Martinique autour de la Montagne Pelée : randonnées, plages sauvages, rhumeries, plongée, villages authentiques et patrimoine volcanique." />
+  <meta name="keywords" content="nord martinique, montagne pelée, activités martinique, le prêcheur, grand-rivière, saint-pierre, morne-rouge, blog martinique, tourisme nord" />
+  <meta property="og:title" content="Explorer le Nord – Martinique" />
+  <meta property="og:description" content="12 activités incontournables autour de la Montagne Pelée : volcan, cascades, plages de sable noir, villages, rhum AOC, épaves sous-marines." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://locationcaraibeetpelee.com/blog.html" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --deep: #1a3040;
+  --forest: #5d7a3a;
+  --gold: #f0a500;
+  --gold-light: #fcd34d;
+  --coral: #d4763a;
+  --ocean: #0097a7;
+  --lagon: #48cae4;
+      --ocean: #0097a7;
+      --lagon: #48cae4;
+      --turq: #00d4aa;
+      --gold-light: #fcd34d;
+      --sand: #f5ede0;
+      --sand-dark: #e8d5b7;
+      --coral: #d4763a;
+      --white:      #ffffff;
+      --text-dark: #1a2530;
+      --text-mid: #3a5565;
+      --text-light: #7a95a5;
+      --shadow:     0 8px 40px rgba(26,48,64,0.15);
+      --shadow-soft:0 4px 20px rgba(26,48,64,0.08);
+      --radius:     18px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--sand);
+      color: var(--text-dark);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 48px;
+      background: rgba(26,48,64,0.96);
+      backdrop-filter: blur(12px);
+      transition: padding 0.4s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    nav.scrolled { padding: 12px 48px; }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.5px;
+    }
+    .nav-logo span { color: var(--gold-light); font-style: italic; }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.88);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.3px;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--gold-light); }
+    .nav-cta {
+      background: var(--gold);
+      color: var(--deep) !important;
+      padding: 9px 22px;
+      border-radius: 50px;
+      font-weight: 700 !important;
+      transition: background 0.2s, transform 0.2s !important;
+    }
+    .nav-cta:hover { background: var(--gold-light) !important; transform: translateY(-1px); }
+    .nav-burger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .nav-burger span { width: 26px; height: 2px; background: white; }
+
+    /* ─── HERO ─── */
+    .blog-hero {
+      min-height: 62vh;
+      padding: 150px 48px 90px;
+      background:
+        linear-gradient(135deg, rgba(26,48,64,0.80) 0%, rgba(26,48,64,0.90) 100%),
+        url("https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=1800&q=80") center/cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+    .blog-hero::before {
+      content: '';
+      position: absolute;
+      bottom: -1px; left: 0; right: 0;
+      height: 50px;
+      background: linear-gradient(to bottom, transparent, var(--sand));
+    }
+    .hero-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,151,167,0.2);
+      border: 1px solid rgba(0,151,167,0.5);
+      color: var(--gold-light);
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      padding: 6px 18px; border-radius: 50px;
+      margin-bottom: 24px;
+      animation: fadeUp 0.8s ease both;
+    }
+    .blog-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+      line-height: 1.15;
+      max-width: 820px;
+      margin-bottom: 22px;
+      animation: fadeUp 0.8s 0.1s ease both;
+    }
+    .blog-hero h1 em { color: var(--gold-light); font-style: italic; }
+    .blog-hero p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.1rem;
+      max-width: 620px;
+      line-height: 1.7;
+      animation: fadeUp 0.8s 0.2s ease both;
+    }
+
+    /* ─── INTRO ─── */
+    .blog-intro {
+      padding: 80px 48px 40px;
+      max-width: 820px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .section-tag {
+      display: inline-block;
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      color: var(--ocean);
+      background: rgba(26,122,74,0.1);
+      padding: 5px 14px; border-radius: 50px;
+      margin-bottom: 14px;
+    }
+    .blog-intro h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      color: var(--deep);
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+    .blog-intro h2 em { color: var(--ocean); font-style: italic; }
+    .blog-intro p {
+      color: var(--text-mid);
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    /* ─── CATEGORY FILTERS ─── */
+    .filters {
+      max-width: 1200px;
+      margin: 10px auto 0;
+      padding: 0 48px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .filter-btn {
+      padding: 8px 18px;
+      border-radius: 50px;
+      border: 1.5px solid #cde8d8;
+      background: transparent;
+      font-family: 'Nunito', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-mid);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: var(--ocean);
+      border-color: var(--ocean);
+      color: white;
+    }
+
+    /* ─── ARTICLES GRID ─── */
+    .articles-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 48px 80px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    .article-card {
+      background: white;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.35s, box-shadow 0.35s;
+      position: relative;
+    }
+    .article-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow);
+    }
+    .article-card.featured {
+      grid-column: span 2;
+    }
+    .article-card .img-wrap {
+      aspect-ratio: 3/2;
+      overflow: hidden;
+      position: relative;
+    }
+    .article-card.featured .img-wrap {
+      aspect-ratio: 16/8;
+    }
+    .article-card img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s;
+      display: block;
+    }
+    .article-card:hover img { transform: scale(1.06); }
+    .card-number {
+      position: absolute;
+      top: 14px; left: 14px;
+      background: rgba(255,255,255,0.92);
+      color: var(--deep);
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      z-index: 2;
+    }
+    .card-body {
+      padding: 22px 24px 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-cat {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--turq);
+      margin-bottom: 10px;
+    }
+    .card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: var(--deep);
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .card-title em { color: var(--ocean); font-style: italic; }
+    .card-lede {
+      font-size: 0.92rem;
+      color: var(--text-mid);
+      line-height: 1.6;
+      margin-bottom: 16px;
+      flex: 1;
+    }
+    .card-readmore {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--ocean);
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.3px;
+      transition: gap 0.2s, color 0.2s;
+    }
+    .article-card:hover .card-readmore {
+      gap: 12px;
+      color: var(--turq);
+    }
+
+    /* ─── CTA FINAL ─── */
+    .blog-cta {
+      background: linear-gradient(135deg, var(--deep) 0%, #0a4d6e 100%);
+      color: white;
+      text-align: center;
+      padding: 80px 48px;
+    }
+    .blog-cta .section-tag {
+      background: rgba(255,255,255,0.12);
+      color: var(--gold-light);
+    }
+    .blog-cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.6rem, 3vw, 2.3rem);
+      color: white;
+      line-height: 1.25;
+      margin-bottom: 16px;
+      max-width: 700px;
+      margin-left: auto; margin-right: auto;
+    }
+    .blog-cta h2 em { color: var(--gold-light); font-style: italic; }
+    .blog-cta p {
+      color: rgba(255,255,255,0.78);
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+    .btn-cta {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--deep);
+      text-decoration: none;
+      font-weight: 700;
+      padding: 14px 34px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      letter-spacing: 0.3px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(0,151,167,0.4);
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #051e13;
+      color: rgba(255,255,255,0.6);
+      padding: 40px 48px;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+    footer a { color: var(--gold-light); text-decoration: none; }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .articles-grid { grid-template-columns: repeat(2, 1fr); }
+      .article-card.featured { grid-column: span 2; }
+    }
+    @media (max-width: 900px) {
+      nav { padding: 14px 22px; }
+      .nav-links { display: none; }
+      .nav-burger { display: flex; }
+      .blog-hero { padding: 130px 24px 70px; min-height: 56vh; }
+      .blog-intro { padding: 60px 24px 30px; }
+      .filters { padding: 0 24px; }
+      .articles-grid { padding: 30px 24px 60px; }
+      .blog-cta { padding: 60px 24px; }
+    }
+    @media (max-width: 620px) {
+      .articles-grid { grid-template-columns: 1fr; }
+      .article-card.featured { grid-column: span 1; }
+      .article-card.featured .img-wrap { aspect-ratio: 3/2; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── NAV ─── -->
+<nav id="navbar">
+  <a href="index.html" style="display:flex;align-items:center;gap:14px;text-decoration:none;">
+    <svg width="58" height="58" viewBox="0 0 100 100" style="flex-shrink:0;">
+      <circle cx="50" cy="50" r="48" fill="#1a3040" stroke="#f0a500" stroke-width="1.5"/>
+      <circle cx="50" cy="38" r="14" fill="#f0a500" opacity="0.9"/>
+      <circle cx="50" cy="38" r="10" fill="#f7c948"/>
+      <circle cx="50" cy="38" r="6" fill="#ffe066"/>
+      <path d="M25 68 L42 40 Q46 34 50 38 L55 44 Q57 42 59 44 L75 65" fill="#5d7a3a"/>
+      <path d="M30 68 L44 46 Q47 40 50 44 L60 58" fill="#3d5a25" opacity="0.7"/>
+      <path d="M15 70 Q30 62 45 70 Q60 78 75 70 Q85 64 95 70" fill="none" stroke="#48cae4" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M10 76 Q25 68 40 76 Q55 84 70 76 Q85 68 100 76" fill="none" stroke="#48cae4" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+      <path d="M28 28 Q31 25 34 27" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+      <path d="M66 30 Q69 27 72 29" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+    </svg>
+    <span style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.2;">Entre la Caraïbe<br><span style="color:#fcd34d;font-style:italic;font-size:1.1rem;">et la Pelée</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#logements">Nos logements</a></li>
+    <li><a href="index.html#destinations">Destinations</a></li>
+    <li><a href="blog.html" class="active">Explorer le Nord</a></li>
+    <li><a href="index.html#avantages">Pourquoi nous</a></li>
+    <li><a href="index.html#avis">Avis</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="nav-burger" onclick="location.href='index.html'">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="blog-hero">
+  <div class="hero-eyebrow">🌋 Le Nord de la Pelée · Guide Voyageurs</div>
+  <h1>12 expériences inoubliables<br>au pied du <em>volcan</em></h1>
+  <p>Randonnée, plages sauvages, rhum AOC, plongée sur épaves historiques, villages du bout du monde… Tout ce qu'il faut savoir pour explorer le nord de la Martinique autour de la Montagne Pelée.</p>
+</section>
+
+<!-- ─── INTRO ─── -->
+<section class="blog-intro">
+  <span class="section-tag">Bienvenue dans le Nord</span>
+  <h2>Une Martinique <em>sauvage et vivante</em></h2>
+  <p>Le nord de la Martinique, c'est l'île telle qu'elle s'est formée : volcanique, luxuriante, parfois escarpée, toujours généreuse. Autour de la Montagne Pelée — inscrite au patrimoine mondial de l'UNESCO en 2023 — se déploie une région que le tourisme de masse n'a pas (encore) abîmée. Ici, on se lève tôt pour gravir un volcan, on pique-nique sur du sable noir volcanique, on partage un ti-punch chez un pêcheur de Grand'Rivière, et on finit la journée sous les étoiles au son des grenouilles. Voici nos 12 coups de cœur pour ne rien manquer.</p>
+</section>
+
+<!-- ─── FILTRES ─── -->
+<div class="filters reveal">
+  <button class="filter-btn active" data-cat="all">Tout voir</button>
+  <button class="filter-btn" data-cat="nature">🌿 Nature &amp; Rando</button>
+  <button class="filter-btn" data-cat="plage">🏖️ Plages</button>
+  <button class="filter-btn" data-cat="patrimoine">🏛️ Patrimoine</button>
+  <button class="filter-btn" data-cat="gastro">🥃 Rhum</button>
+  <button class="filter-btn" data-cat="aquatique">💧 Aquatique</button>
+</div>
+
+<!-- ─── GRILLE ARTICLES ─── -->
+<section class="articles-grid">
+
+  <!-- 01 · MONTAGNE PELÉE · featured -->
+  <a class="article-card featured reveal" href="blog/montagne-pelee.html" data-cat="nature">
+    <div class="img-wrap">
+      <span class="card-number">01</span>
+      <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=1200&q=80" alt="La Montagne Pelée, volcan emblématique du nord de la Martinique" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-cat">🥾 Randonnée · Aventure</div>
+      <h3 class="card-title">L'ascension de la <em>Montagne Pelée</em></h3>
+      <p class="card-lede">Le toit de la Martinique, 1 397 mètres d'histoire, de roche et de nuages. Une randonnée mythique qu'il faut avoir faite au moins une fois.</p>
+      <span class="card-readmore">Lire l'article →</span>
+    </div>
+  </a>
+
+  <!-- 02 · HABITATION CÉRON -->
+  <a class="article-card reveal" href="blog/habitation-ceron.html" data-cat="patrimoine nature">
+    <div class="img-wrap">
+      <span class="card-number">02</span>
+      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900&q=80" alt="L'Habitation Céron et son majestueux Zamana au Prêcheur" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-cat">🌳 Patrimoine · Nature</div>
+      <h3 class="card-title">L'Habitation Céron &amp; son <em>Zamana</em></h3>
+      <p class="card-lede">Le plus bel arbre de France pousse au Prêcheur, dans une ancienne sucrerie devenue jardin remarquable.</p>
+      <span class="card-readmore">Lire l'article →</span>
+    </div>
+  </a>
+
+  <!-- 03 · CASCADE COULEUVRE -->
+  <a class="article-card reveal" href="blog/cascade-couleuvre.html" data-cat="nature aquatique">
+    <div class="img-wrap">
+      <span class="card-number">03</span>
+      <img src="https://images.unsplash.com/photo-1432889490240-84df33d47091?w=900&q=80" alt="La Cascade Couleuvre, 120 m, au Prêcheur" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-cat">💧 Randonnée · Nature</div>
+      <h3 class="card-title">La <em>Cascade Couleuvre</em></h3>
+      <p class="card-lede">120 mètres de hauteur, la plus grande cascade de Martinique. Une rando facile qui se termine en apothéose.</p>
+      <span class="card-readmore">Lire l'article →</span>
+    </div>
+  </a>
+
+  <!-- 04 · ANSE COULEUVRE -->
+  <a class="article-card reveal" href="blog/anse-couleuvre.html" data-cat="plage">
+    <div class="img-wrap">
+      <span class="card-number">04</span>
+      <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=900&q=80" alt="La plage sauvage de l'Anse Couleuvre au Prêcheur" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-cat">🏖️ Plage · Nature sauvage</div>
+      <h3 class="card-title">La plage de <em>l'Anse Couleuvre</em></h3>
+      <p class="card-lede">Sable noir, cocotiers, eau turquoise et falaises vertigineuses. L'archétype de la plage de Robinson.</p>
+      <span class="card-readmore">Lire l'article →</span>
+    </div>
+  </a>
+
+  <!-- 05 · RANDO PRÊCHEUR - GRAND'RIVIÈRE -->
+  <a class="article-card reveal" href="blog/randonnee-precheur-grand-riviere.html" data-cat="nature">
+    <div class="img-wrap">
+      <span class="card-number">05</span>
+      <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=900&q=80" alt="Randonnée côtière entre Le Prêcheur et Grand'Rivière" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-cat">🧭 Randonnée · Aventure</div>
+      <h3 class="card-title">Rando <em>Prêcheur → Grand'Rivière</em></h3>
+      <p class="card-lede">17 km de côte sauvage à travers une Martinique vierge. Retour au départ en yole de pêche.</p>
+      <span class="card-readmore">Lire l'article →</span>
+    </div>
+  </a>
+
+  <!-- 06 · GRAND-RIVIÈRE · featured -->
+  <a class="article-card featured reveal" href="blog/grand-riviere.html" data-cat="patrimoine">
+    <div class="img-wrap">
+      <span class="card-number">06</span>
+      <img src="https://images.unsplash.com/photo-1597882099415-96e2c2aec74f?w=1200&q=80" alt="Le village de pêcheurs de Grand'Rivière" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-cat">🎣 Village · Culture créole</div>
+      <h3 class="card-title"><em>Grand'Rivière</em>, le bout du monde</h3>
+      <p class="card-lede">Au bout de la route, un village de pêcheurs où le temps semble s'être arrêté. Yoles colorées, marché au poisson et vue sur la Dominique par temps clair.</p>
+      <span class="card-readmore">Lire l'article →</span>
+    </div>
+  </a>
+
+  <!-- 07 · DISTILLERIE DEPAZ -->
+  <a class="article-card reveal" href="blog/distillerie-depaz.html" data-cat="patrimoine gastro">
+    <div class="img-wrap">
+      <span class="card-number">07</span>
+      <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=900&q=80" alt="La Distillerie Depaz à Saint-Pierre" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-cat">🥃 Patrimoine · Gastronomie</div>
+      <h3 class="card-title">La <em>Distillerie Depaz</em> &amp; son Château</h3>
+      <p class="card-lede">L'épopée du rhum né des cendres de 1902 et d'un homme rescapé qui a tout reconstruit.</p>
+      <span class="card-readmore">Lire l'article →</span>
+    </div>
+  </a>
+
+  <!-- 08 · SAINT-PIERRE -->
+  <a class="article-card reveal" href="blog/saint-pierre.html" data-cat="patrimoine">
+    <div class="img-wrap">
+      <span class="card-number">08</span>
+      <img src="https://images.unsplash.com/photo-1584467735815-f778f274e296?w=900&q=80" alt="Les ruines de Saint-Pierre, la Pompéi des Caraïbes" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-cat">🏛️ Patrimoine · Histoire</div>
+      <h3 class="card-title"><em>Saint-Pierre</em>, la Pompéi des Caraïbes</h3>
+      <p class="card-lede">L'ancienne capitale rayée de la carte en 2 minutes. Le lieu le plus émouvant de la Martinique.</p>
+      <span class="card-readmore">Lire l'article →</span>
+    </div>
+  </a>
+
+  <!-- 09 · PLONGÉE ÉPAVES -->
+  <a class="article-card reveal" href="blog/plongee-epaves-saint-pierre.html" data-cat="aquatique patrimoine">
+    <div class="img-wrap">
+      <span class="card-number">09</span>
+      <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=900&q=80" alt="Plongée sur les épaves de la baie de Saint-Pierre" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-cat">🤿 Plongée · Patrimoine</div>
+      <h3 class="card-title">Plongée sur les <em>épaves</em> de Saint-Pierre</h3>
+      <p class="card-lede">Un cimetière marin unique : 12 navires coulés par l'éruption de 1902, recouverts de coraux.</p>
+      <span class="card-readmore">Lire l'article →</span>
+    </div>
+  </a>
+
+  <!-- 10 · GORGES DE LA FALAISE -->
+  <a class="article-card reveal" href="blog/gorges-de-la-falaise.html" data-cat="nature aquatique">
+    <div class="img-wrap">
+      <span class="card-number">10</span>
+      <img src="https://images.unsplash.com/photo-1433477077430-79fe4c1e3b27?w=900&q=80" alt="Les Gorges de la Falaise à Ajoupa-Bouillon" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-cat">🏞️ Rando aquatique · Canyoning</div>
+      <h3 class="card-title">Les <em>Gorges de la Falaise</em></h3>
+      <p class="card-lede">Randonnée aquatique ludique dans un canyon étroit, menant à une cascade sublime. Le bon plan famille.</p>
+      <span class="card-readmore">Lire l'article →</span>
+    </div>
+  </a>
+
+  <!-- 11 · DISTILLERIE JM -->
+  <a class="article-card reveal" href="blog/distillerie-jm.html" data-cat="patrimoine gastro">
+    <div class="img-wrap">
+      <span class="card-number">11</span>
+      <img src="https://images.unsplash.com/photo-1582106245687-cbb466a9f07f?w=900&q=80" alt="La Distillerie JM à Macouba" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-cat">🥃 Patrimoine · Rhum AOC</div>
+      <h3 class="card-title">La <em>Distillerie JM</em> à Macouba</h3>
+      <p class="card-lede">Au fond d'un vallon luxuriant, l'une des plus belles distilleries de l'île. Considérée comme le meilleur rhum vieux du monde.</p>
+      <span class="card-readmore">Lire l'article →</span>
+    </div>
+  </a>
+
+  <!-- 12 · DOMAINE D'ÉMERAUDE -->
+  <a class="article-card reveal" href="blog/domaine-emeraude.html" data-cat="nature">
+    <div class="img-wrap">
+      <span class="card-number">12</span>
+      <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=900&q=80" alt="Le Domaine d'Émeraude à Morne-Rouge" loading="lazy" />
+    </div>
+    <div class="card-body">
+      <div class="card-cat">🌿 Nature · Jardin remarquable</div>
+      <h3 class="card-title">Le <em>Domaine d'Émeraude</em></h3>
+      <p class="card-lede">24 hectares de nature reine à 5 min de Sainte-Cécile. Un joyau du Parc naturel régional.</p>
+      <span class="card-readmore">Lire l'article →</span>
+    </div>
+  </a>
+
+</section>
+
+<!-- ─── CTA FINAL ─── -->
+<section class="blog-cta">
+  <span class="section-tag">Prêts à découvrir tout ça ?</span>
+  <h2>Le nord de la Pelée, <em>c'est chez nous</em></h2>
+  <p>Nos 12 bungalows et chambres de charme sont idéalement situés entre Le Carbet, Morne-Rouge et Saint-Pierre — au pied du volcan, à quelques minutes des plus belles randonnées du nord. L'endroit parfait pour rayonner.</p>
+  <a href="index.html#logements" class="btn-cta">Voir nos logements →</a>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  © <span id="year"></span> Entre la Caraïbe et la Pelée · <a href="index.html">Retour à l'accueil</a>
+</footer>
+
+<script>
+  // Nav scroll
+  const nav = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) e.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Category filters
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.article-card');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.cat;
+      cards.forEach(card => {
+        if (cat === 'all' || card.dataset.cat.split(' ').includes(cat)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

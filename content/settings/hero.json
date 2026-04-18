@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Nord Martinique · Entre la Caraïbe et la Pelée",
+  "title_line1": "Séjournez entre la mer",
+  "title_line2": "et la Montagne Pelée",
+  "subtitle": "12 bungalows et chambres de charme au Carbet, Morne-Rouge et Saint-Pierre. Des Caraïbes au sommet du volcan — la Martinique authentique.",
+  "carousel_images": [
+    {"src": "vue_bungalow.png", "alt": "Vue aérienne des bungalows au Carbet"},
+    {"src": "https://l.icdbcdn.com/oh/1e771ae6-3878-4c2b-b6de-1918b097d602.jpg?w=1400", "alt": "Vue mer depuis la terrasse"},
+    {"src": "https://l.icdbcdn.com/oh/c49cc493-ed50-48c8-9147-730824ea3525.jpg?w=1400", "alt": "Vue de la Montagne Pelée"},
+    {"src": "https://l.icdbcdn.com/oh/e3a8e2c4-8782-460f-82b1-0d5a55c9d861.jpg?w=1400", "alt": "Terrasse vue mer au Carbet"},
+    {"src": "https://l.icdbcdn.com/oh/61a4b045-e857-435f-b74a-e4e489f822c3.jpg?w=1400", "alt": "Vue sur les Pitons"}
+  ]
+}

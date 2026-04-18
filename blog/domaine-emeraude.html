@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Le Domaine d'Émeraude — Explorer le Nord · Entre la Caraïbe et la Pelée</title>
+<meta name="description" content="24 hectares de nature reine entre la Pelée et les Pitons du Carbet. Un joyau du Parc naturel régional, à 5 minutes de Sainte-Cécile."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --deep: #1a3040; --ocean: #0097a7; --lagon: #48cae4;
+  --forest: #5d7a3a; --gold: #f0a500; --gold-light: #fcd34d;
+  --coral: #d4763a; --sand: #f5ede0; --white: #ffffff;
+  --text-dark: #1a2530; --text-mid: #3a5565; --text-light: #7a95a5;
+  --shadow: 0 8px 40px rgba(26,48,64,0.15); --radius: 18px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--sand);color:var(--text-dark);overflow-x:hidden;line-height:1.6}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:10px 48px;background:rgba(26,48,64,0.97);backdrop-filter:blur(12px);box-shadow:0 4px 20px rgba(0,0,0,0.15)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.88);text-decoration:none;font-weight:600;font-size:0.9rem;transition:color 0.2s}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-cta{background:var(--gold)!important;color:var(--deep)!important;padding:9px 22px;border-radius:50px;font-weight:700!important}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.nav-burger span{width:24px;height:2px;background:#fff;border-radius:2px}
+footer{background:var(--deep);color:rgba(255,255,255,0.7);padding:40px 48px 24px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-inner a{color:var(--gold-light);text-decoration:none}
+.footer-copy{font-size:0.8rem}
+.article-hero{position:relative;min-height:420px;display:flex;align-items:flex-end;padding:120px 48px 60px;background-size:cover;background-position:center;color:#fff}
+.article-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,48,64,0.75) 0%,rgba(26,48,64,0.88) 100%)}
+.article-hero>*{position:relative;z-index:1}
+.article-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);line-height:1.2;margin-bottom:14px}
+.article-hero .lede{color:rgba(255,255,255,0.9);font-size:1.1rem;max-width:700px;font-style:italic}
+.meta-bar{background:white;box-shadow:var(--shadow);padding:18px 28px;border-radius:var(--radius);display:flex;flex-wrap:wrap;gap:20px;max-width:800px;margin:-36px auto 0;position:relative;z-index:5;font-size:0.88rem;color:var(--text-mid)}
+.meta-bar strong{color:var(--text-dark)}
+.article-content{max-width:800px;margin:48px auto;padding:0 48px}
+.article-content h2{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--deep);margin:36px 0 16px;line-height:1.3}
+.article-content h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--deep);margin:28px 0 12px}
+.article-content p{color:var(--text-mid);line-height:1.85;margin-bottom:18px;font-size:1rem}
+.article-content ul,.article-content ol{margin:16px 0 18px 24px;color:var(--text-mid)}
+.article-content li{margin-bottom:8px;line-height:1.7}
+.article-content strong{color:var(--text-dark)}
+.article-content img{width:100%;border-radius:12px;margin:24px 0}
+.article-content blockquote{border-left:4px solid var(--gold);padding:16px 24px;margin:24px 0;background:rgba(240,165,0,0.06);border-radius:0 12px 12px 0;font-style:italic;color:var(--text-mid)}
+.article-cta{max-width:800px;margin:0 auto 48px;padding:0 48px}
+.article-cta-box{background:var(--deep);border-radius:var(--radius);padding:36px;text-align:center;color:#fff}
+.article-cta-box h3{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:10px}
+.article-cta-box p{color:rgba(255,255,255,0.7);margin-bottom:20px;font-size:0.95rem}
+.article-cta-box a{display:inline-block;background:linear-gradient(135deg,var(--ocean),var(--gold));color:#fff;padding:12px 32px;border-radius:50px;font-weight:700;text-decoration:none;transition:transform 0.2s}
+.article-cta-box a:hover{transform:translateY(-2px)}
+@media(max-width:900px){nav{padding:14px 24px}.nav-links{display:none}.nav-burger{display:flex}.article-hero{padding:100px 24px 48px;min-height:340px}.article-content{padding:0 24px}.article-cta{padding:0 24px}footer{padding:30px 24px}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="../index.html" style="display:flex;align-items:center;gap:14px;text-decoration:none;">
+    <svg width="58" height="58" viewBox="0 0 100 100" style="flex-shrink:0;">
+<circle cx="50" cy="50" r="48" fill="#1a3040" stroke="#f0a500" stroke-width="1.5"/>
+<circle cx="50" cy="38" r="14" fill="#f0a500" opacity="0.9"/>
+<circle cx="50" cy="38" r="10" fill="#f7c948"/>
+<circle cx="50" cy="38" r="6" fill="#ffe066"/>
+<path d="M25 68 L42 40 Q46 34 50 38 L55 44 Q57 42 59 44 L75 65" fill="#5d7a3a"/>
+<path d="M30 68 L44 46 Q47 40 50 44 L60 58" fill="#3d5a25" opacity="0.7"/>
+<path d="M15 70 Q30 62 45 70 Q60 78 75 70 Q85 64 95 70" fill="none" stroke="#48cae4" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M10 76 Q25 68 40 76 Q55 84 70 76 Q85 68 100 76" fill="none" stroke="#48cae4" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+<path d="M28 28 Q31 25 34 27" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+<path d="M66 30 Q69 27 72 29" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+</svg>
+    <span style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.2;">Entre la Caraïbe<br><span style="color:#fcd34d;font-style:italic;font-size:1.1rem;">et la Pelée</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html#logements">Nos logements</a></li>
+    <li><a href="../blog.html">Explorer le Nord</a></li>
+    <li><a href="../index.html#avis">Avis</a></li>
+    <li><a href="../index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="article-hero" style="background-image:url('https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=1800&q=80');">
+  <div style="max-width:800px;">
+    <div style="display:inline-block;background:rgba(0,151,167,0.25);border:1px solid rgba(0,151,167,0.5);color:var(--lagon);font-size:0.78rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 18px;border-radius:50px;margin-bottom:18px;">Villages & Nature</div>
+    <h1>Le Domaine d'Émeraude</h1>
+    <p class="lede">24 hectares de nature reine entre la Pelée et les Pitons du Carbet. Un joyau du Parc naturel régional, à 5 minutes de Sainte-Cécile.</p>
+  </div>
+</div>
+<div class="meta-bar">
+  <span>📅 <strong>2026-04-01</strong></span>
+  <span>🏷 <strong>Villages & Nature</strong></span>
+  <span>⏱ <strong>5 min</strong> de lecture</span>
+</div>
+<div class="article-content">
+<p>À deux pas de nos logements de Sainte-Cécile, coincé entre les flancs de la Montagne Pelée et ceux des Pitons du Carbet, se trouve un site méconnu et pourtant exceptionnel : le Domaine d&#39;Émeraude. 24 hectares de forêt aménagée, l&#39;un des joyaux du Parc naturel régional de la Martinique, où la nature a repris tous ses droits — mais proprement, avec panneaux pédagogiques, sentiers balisés, et un pavillon d&#39;exploration.
+C&#39;est l&#39;endroit idéal pour une demi-journée nature facile, en famille, pour comprendre la biodiversité tropicale martiniquaise. Une mise en bouche parfaite avant de s&#39;attaquer à la Pelée, ou une jolie récupération post-randonnée.</p>
+<h2>🌿 Pourquoi y aller</h2>
+<p>Parce que le site a été conçu pour faire découvrir la richesse de la flore martiniquaise de façon à la fois ludique et pédagogique. Le sentier aménagé de 4 km serpente à travers une forêt tropicale exubérante — fougères arborescentes géantes, balisiers, bois-canon, acomat, gommiers. Des panneaux jalonnent le parcours pour identifier les espèces et raconter leurs usages traditionnels (médicinaux, alimentaires, artisanaux).
+Le cœur du domaine abrite un <strong>Jardin des Origines</strong> consacré à l&#39;ethnopharmacopée caribéenne, un pavillon d&#39;exploration pédagogique pour les enfants, et une boutique qui valorise l&#39;artisanat local. C&#39;est l&#39;un des rares sites de Martinique à combiner vraie nature sauvage et médiation éducative de qualité. Et c&#39;est à 5 minutes en voiture de nos logements — vous pouvez y aller en fin d&#39;après-midi sans organiser une expédition.</p>
+<h2>✨ À ne pas manquer</h2>
+<ul>
+<li><strong>Le sentier aménagé de 4 km</strong> — accessible à tous, traversant une forêt tropicale luxuriante. Environ 1 h 30 à 2 h de marche tranquille.- <strong>Le Jardin des Origines</strong> — ethnopharmacopée caribéenne, plantes médicinales traditionnelles, savoir-faire ancestraux des populations caraïbes.- <strong>Le Pavillon d&#39;exploration</strong> — expositions pédagogiques et ludiques sur la géologie, la météorologie, les écosystèmes du nord.- <strong>La boutique du Parc naturel</strong> — artisanat local, miel, confitures, souvenirs authentiques sans kitsch. Parfait pour rapporter quelque chose de vrai.- <strong>Les espèces rares ou endémiques</strong> — le domaine abrite plusieurs espèces protégées. Prenez le temps de lire les panneaux.- <strong>La fontaine du jardin central</strong> — jolie composition paysagère au cœur du site.Idéal à combiner avec une visite des Gorges de la Falaise (15 min en voiture) pour une journée complète nature du nord. Prévoir des chaussures confortables et un anti-moustique en saison humide.</li>
+</ul>
+
+</div>
+<div class="article-cta">
+  <div class="article-cta-box">
+    <h3>Envie de découvrir le Nord ?</h3>
+    <p>Nos bungalows sont le point de départ idéal pour explorer la Martinique authentique.</p>
+    <a href="../index.html#logements">Voir nos logements →</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2025 Entre la Caraïbe et la Pelée · <a href="../index.html">Accueil</a> · <a href="../blog.html">Explorer le Nord</a> · <a href="../index.html#contact">Contact</a></span>
+    <span class="footer-copy">12 hébergements · Le Carbet · Morne-Rouge · Saint-Pierre · Martinique</span>
+  </div>
+</footer>
+<script>
+function toggleMenu(){var l=document.querySelector('.nav-links');if(l.style.display==='flex'){l.style.display='none'}else{l.style.display='flex';l.style.flexDirection='column';l.style.position='fixed';l.style.top='80px';l.style.left='0';l.style.right='0';l.style.background='rgba(26,48,64,0.97)';l.style.padding='20px 24px';l.style.gap='16px';l.style.zIndex='99'}}
+</script>
+</body>
+</html>

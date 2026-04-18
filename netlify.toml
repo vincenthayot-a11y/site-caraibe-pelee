@@ -1,0 +1,16 @@
+[build]
+  command = "npm install && node build.js"
+  publish = "."
+  functions = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Redirection pour que /api/data pointe vers la fonction
+[[redirects]]
+  from = "/api/data"
+  to = "/.netlify/functions/lodgify-data"
+  status = 200

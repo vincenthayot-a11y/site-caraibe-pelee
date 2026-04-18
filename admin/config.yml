@@ -1,0 +1,83 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: 'fr'
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+
+  - name: "blog"
+    label: "Explorer le Nord"
+    label_singular: "Article"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Date de publication", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Image de couverture", name: "image", widget: "image" }
+      - { label: "Catégorie", name: "category", widget: "select", options: ["Randonnée", "Plage", "Culture & Patrimoine", "Rhum & Gastronomie", "Activités nautiques", "Villages & Nature"] }
+      - { label: "Résumé", name: "summary", widget: "text" }
+      - { label: "Temps de lecture (minutes)", name: "reading_time", widget: "number", value_type: "int", min: 1, max: 30, default: 5 }
+      - { label: "Contenu", name: "body", widget: "markdown" }
+
+  - name: "reviews"
+    label: "Avis clients"
+    label_singular: "Avis"
+    folder: "content/reviews"
+    create: true
+    slug: "{{fields.name}}-{{fields.date}}"
+    fields:
+      - { label: "Prénom du voyageur", name: "name", widget: "string" }
+      - { label: "Initiale (pour l'avatar)", name: "initial", widget: "string" }
+      - { label: "Date du séjour", name: "date", widget: "string", hint: "Ex: Mars 2026" }
+      - { label: "Logement", name: "property", widget: "string" }
+      - { label: "Lieu", name: "location", widget: "select", options: ["Le Carbet", "Morne-Rouge", "Saint-Pierre"] }
+      - { label: "Note (sur 5)", name: "rating", widget: "number", value_type: "int", min: 1, max: 5, default: 5 }
+      - { label: "Texte de l'avis", name: "text", widget: "text" }
+
+  - name: "settings"
+    label: "Réglages du site"
+    files:
+      - label: "Textes du hero"
+        name: "hero"
+        file: "content/settings/hero.json"
+        fields:
+          - { label: "Badge", name: "eyebrow", widget: "string" }
+          - { label: "Titre ligne 1", name: "title_line1", widget: "string" }
+          - { label: "Titre ligne 2 (italique)", name: "title_line2", widget: "string" }
+          - { label: "Sous-titre", name: "subtitle", widget: "text" }
+          - label: "Photos du carrousel"
+            name: "carousel_images"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "src", widget: "image" }
+              - { label: "Description", name: "alt", widget: "string" }
+
+      - label: "Statistiques"
+        name: "stats"
+        file: "content/settings/stats.json"
+        fields:
+          - { label: "Nombre de logements", name: "properties_count", widget: "string" }
+          - { label: "Note moyenne", name: "rating", widget: "string" }
+          - { label: "Nombre de voyageurs", name: "travelers", widget: "string" }
+          - { label: "Nombre de communes", name: "communes", widget: "string" }
+
+      - label: "Footer"
+        name: "footer"
+        file: "content/settings/footer.json"
+        fields:
+          - { label: "Phrase d'accroche", name: "tagline", widget: "text" }
+          - { label: "Copyright", name: "copyright", widget: "string" }
+          - { label: "Téléphone", name: "phone", widget: "string", required: false }
+          - { label: "Email", name: "email", widget: "string", required: false }
+          - label: "Réseaux sociaux"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Facebook (URL)", name: "facebook", widget: "string", required: false }
+              - { label: "Instagram (URL)", name: "instagram", widget: "string", required: false }
+              - { label: "WhatsApp (numéro)", name: "whatsapp", widget: "string", required: false }

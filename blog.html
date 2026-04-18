@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Explorer le Nord – Activités & Découvertes en Martinique · Entre la Caraïbe et la Pelée</title>
+<meta name="description" content="Activités incontournables dans le nord de la Martinique : randonnées, plages, rhumeries, plongée, villages authentiques et patrimoine volcanique."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<style>
+
+:root {
+  --deep: #1a3040; --ocean: #0097a7; --lagon: #48cae4;
+  --forest: #5d7a3a; --gold: #f0a500; --gold-light: #fcd34d;
+  --coral: #d4763a; --sand: #f5ede0; --white: #ffffff;
+  --text-dark: #1a2530; --text-mid: #3a5565; --text-light: #7a95a5;
+  --shadow: 0 8px 40px rgba(26,48,64,0.15); --radius: 18px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;background:var(--sand);color:var(--text-dark);overflow-x:hidden;line-height:1.6}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:10px 48px;background:rgba(26,48,64,0.97);backdrop-filter:blur(12px);box-shadow:0 4px 20px rgba(0,0,0,0.15)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:rgba(255,255,255,0.88);text-decoration:none;font-weight:600;font-size:0.9rem;transition:color 0.2s}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-cta{background:var(--gold)!important;color:var(--deep)!important;padding:9px 22px;border-radius:50px;font-weight:700!important}
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.nav-burger span{width:24px;height:2px;background:#fff;border-radius:2px}
+footer{background:var(--deep);color:rgba(255,255,255,0.7);padding:40px 48px 24px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-inner a{color:var(--gold-light);text-decoration:none}
+.footer-copy{font-size:0.8rem}
+.article-hero{position:relative;min-height:420px;display:flex;align-items:flex-end;padding:120px 48px 60px;background-size:cover;background-position:center;color:#fff}
+.article-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,48,64,0.75) 0%,rgba(26,48,64,0.88) 100%)}
+.article-hero>*{position:relative;z-index:1}
+.article-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);line-height:1.2;margin-bottom:14px}
+.article-hero .lede{color:rgba(255,255,255,0.9);font-size:1.1rem;max-width:700px;font-style:italic}
+.meta-bar{background:white;box-shadow:var(--shadow);padding:18px 28px;border-radius:var(--radius);display:flex;flex-wrap:wrap;gap:20px;max-width:800px;margin:-36px auto 0;position:relative;z-index:5;font-size:0.88rem;color:var(--text-mid)}
+.meta-bar strong{color:var(--text-dark)}
+.article-content{max-width:800px;margin:48px auto;padding:0 48px}
+.article-content h2{font-family:'Playfair Display',serif;font-size:1.6rem;color:var(--deep);margin:36px 0 16px;line-height:1.3}
+.article-content h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--deep);margin:28px 0 12px}
+.article-content p{color:var(--text-mid);line-height:1.85;margin-bottom:18px;font-size:1rem}
+.article-content ul,.article-content ol{margin:16px 0 18px 24px;color:var(--text-mid)}
+.article-content li{margin-bottom:8px;line-height:1.7}
+.article-content strong{color:var(--text-dark)}
+.article-content img{width:100%;border-radius:12px;margin:24px 0}
+.article-content blockquote{border-left:4px solid var(--gold);padding:16px 24px;margin:24px 0;background:rgba(240,165,0,0.06);border-radius:0 12px 12px 0;font-style:italic;color:var(--text-mid)}
+.article-cta{max-width:800px;margin:0 auto 48px;padding:0 48px}
+.article-cta-box{background:var(--deep);border-radius:var(--radius);padding:36px;text-align:center;color:#fff}
+.article-cta-box h3{font-family:'Playfair Display',serif;font-size:1.3rem;margin-bottom:10px}
+.article-cta-box p{color:rgba(255,255,255,0.7);margin-bottom:20px;font-size:0.95rem}
+.article-cta-box a{display:inline-block;background:linear-gradient(135deg,var(--ocean),var(--gold));color:#fff;padding:12px 32px;border-radius:50px;font-weight:700;text-decoration:none;transition:transform 0.2s}
+.article-cta-box a:hover{transform:translateY(-2px)}
+@media(max-width:900px){nav{padding:14px 24px}.nav-links{display:none}.nav-burger{display:flex}.article-hero{padding:100px 24px 48px;min-height:340px}.article-content{padding:0 24px}.article-cta{padding:0 24px}footer{padding:30px 24px}}
+
+.blog-hero{text-align:center;padding:120px 48px 60px;background:var(--deep);color:#fff}
+.blog-hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);margin-bottom:14px}
+.blog-hero h1 em{color:var(--gold-light);font-style:italic}
+.blog-hero p{color:rgba(255,255,255,0.7);max-width:600px;margin:0 auto;font-size:1.05rem}
+.blog-grid{max-width:1100px;margin:48px auto;padding:0 48px;display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:28px}
+.blog-card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);text-decoration:none;color:inherit;transition:transform 0.3s}
+.blog-card:hover{transform:translateY(-5px)}
+.blog-card img{width:100%;height:200px;object-fit:cover}
+.blog-card-body{padding:20px 22px}
+.blog-cat{display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:4px 12px;border-radius:50px;margin-bottom:10px}
+.blog-card-body h3{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--deep);margin-bottom:8px;line-height:1.35}
+.blog-card-body p{font-size:0.88rem;color:var(--text-mid);line-height:1.6;margin-bottom:12px}
+.blog-meta{font-size:0.78rem;color:var(--text-light)}
+@media(max-width:900px){.blog-grid{padding:0 24px;grid-template-columns:1fr}.blog-hero{padding:100px 24px 48px}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="index.html" style="display:flex;align-items:center;gap:14px;text-decoration:none;">
+    <svg width="58" height="58" viewBox="0 0 100 100" style="flex-shrink:0;">
+<circle cx="50" cy="50" r="48" fill="#1a3040" stroke="#f0a500" stroke-width="1.5"/>
+<circle cx="50" cy="38" r="14" fill="#f0a500" opacity="0.9"/>
+<circle cx="50" cy="38" r="10" fill="#f7c948"/>
+<circle cx="50" cy="38" r="6" fill="#ffe066"/>
+<path d="M25 68 L42 40 Q46 34 50 38 L55 44 Q57 42 59 44 L75 65" fill="#5d7a3a"/>
+<path d="M30 68 L44 46 Q47 40 50 44 L60 58" fill="#3d5a25" opacity="0.7"/>
+<path d="M15 70 Q30 62 45 70 Q60 78 75 70 Q85 64 95 70" fill="none" stroke="#48cae4" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M10 76 Q25 68 40 76 Q55 84 70 76 Q85 68 100 76" fill="none" stroke="#48cae4" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+<path d="M28 28 Q31 25 34 27" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+<path d="M66 30 Q69 27 72 29" fill="none" stroke="#fff" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+</svg>
+    <span style="font-family:'Playfair Display',serif;font-size:1.4rem;color:#fff;line-height:1.2;">Entre la Caraïbe<br><span style="color:#fcd34d;font-style:italic;font-size:1.1rem;">et la Pelée</span></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#logements">Nos logements</a></li>
+    <li><a href="blog.html">Explorer le Nord</a></li>
+    <li><a href="index.html#avis">Avis</a></li>
+    <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <div class="nav-burger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+</nav>
+<div class="blog-hero">
+  <span style="display:inline-block;font-size:0.72rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold-light);background:rgba(240,165,0,0.15);padding:5px 14px;border-radius:50px;margin-bottom:14px;">Explorer le Nord</span>
+  <h1>La Martinique du Nord <em>à vivre</em></h1>
+  <p>Randonnées, plages secrètes, distilleries, patrimoine volcanique — nos incontournables pour découvrir le nord depuis nos bungalows.</p>
+</div>
+<div class="blog-grid">
+<a href="blog/anse-couleuvre.html" class="blog-card">
+  <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1800&q=80" alt="La plage de l'Anse Couleuvre" loading="lazy"/>
+  <div class="blog-card-body">
+    <span class="blog-cat" style="background:#ddf0fa;color:#0077a8;">Plage</span>
+    <h3>La plage de l'Anse Couleuvre</h3>
+    <p>Sable noir, cocotiers, eau turquoise et falaises vertigineuses. Si Robinson Crusoé avait eu le choix, il aurait débarqué ici.</p>
+    <span class="blog-meta">⏱ 10 min · 2026-04-01</span>
+  </div>
+</a>
+<a href="blog/cascade-couleuvre.html" class="blog-card">
+  <img src="https://images.unsplash.com/photo-1432889490240-84df33d47091?w=1800&q=80" alt="La Cascade Couleuvre" loading="lazy"/>
+  <div class="blog-card-body">
+    <span class="blog-cat" style="background:#e0f0e4;color:#2d6e3f;">Randonnée</span>
+    <h3>La Cascade Couleuvre</h3>
+    <p>120 mètres de hauteur, la plus grande cascade de Martinique, perdue dans la forêt tropicale. Une rando facile qui se termine en apothéose.</p>
+    <span class="blog-meta">⏱ 5 min · 2026-04-01</span>
+  </div>
+</a>
+<a href="blog/distillerie-depaz.html" class="blog-card">
+  <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=1800&q=80" alt="La Distillerie Depaz & son Château" loading="lazy"/>
+  <div class="blog-card-body">
+    <span class="blog-cat" style="background:#fce8d8;color:#b85c2a;">Rhum & Gastronomie</span>
+    <h3>La Distillerie Depaz & son Château</h3>
+    <p>Au pied de la Pelée, l'histoire incroyable d'un rhum né des cendres de 1902 et d'un homme rescapé qui a tout reconstruit. Un lieu bouleversant.</p>
+    <span class="blog-meta">⏱ 10 min · 2026-04-01</span>
+  </div>
+</a>
+<a href="blog/distillerie-jm.html" class="blog-card">
+  <img src="https://images.unsplash.com/photo-1582106245687-cbb466a9f07f?w=1800&q=80" alt="La Distillerie JM à Macouba" loading="lazy"/>
+  <div class="blog-card-body">
+    <span class="blog-cat" style="background:#fce8d8;color:#b85c2a;">Rhum & Gastronomie</span>
+    <h3>La Distillerie JM à Macouba</h3>
+    <p>Au fond d'un vallon luxuriant, la plus petite et l'une des plus âgées distilleries de l'île. Considérée par beaucoup comme le meilleur rhum agricole au mon</p>
+    <span class="blog-meta">⏱ 30 min · 2026-04-01</span>
+  </div>
+</a>
+<a href="blog/domaine-emeraude.html" class="blog-card">
+  <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=1800&q=80" alt="Le Domaine d'Émeraude" loading="lazy"/>
+  <div class="blog-card-body">
+    <span class="blog-cat" style="background:#e5f0da;color:#4a7a3a;">Villages & Nature</span>
+    <h3>Le Domaine d'Émeraude</h3>
+    <p>24 hectares de nature reine entre la Pelée et les Pitons du Carbet. Un joyau du Parc naturel régional, à 5 minutes de Sainte-Cécile.</p>
+    <span class="blog-meta">⏱ 5 min · 2026-04-01</span>
+  </div>
+</a>
+<a href="blog/gorges-de-la-falaise.html" class="blog-card">
+  <img src="https://images.unsplash.com/photo-1433477077430-79fe4c1e3b27?w=1800&q=80" alt="Les Gorges de la Falaise" loading="lazy"/>
+  <div class="blog-card-body">
+    <span class="blog-cat" style="background:#e0f0e4;color:#2d6e3f;">Randonnée</span>
+    <h3>Les Gorges de la Falaise</h3>
+    <p>Une randonnée aquatique ludique dans un canyon étroit, menant à une cascade sublime. Le bon plan familial du nord.</p>
+    <span class="blog-meta">⏱ 5 min · 2026-04-01</span>
+  </div>
+</a>
+<a href="blog/grand-riviere.html" class="blog-card">
+  <img src="https://images.unsplash.com/photo-1597882099415-96e2c2aec74f?w=1800&q=80" alt="Grand'Rivière, le bout du monde" loading="lazy"/>
+  <div class="blog-card-body">
+    <span class="blog-cat" style="background:#e5f0da;color:#4a7a3a;">Villages & Nature</span>
+    <h3>Grand'Rivière, le bout du monde</h3>
+    <p>Au bout de la route, un village de pêcheurs où le temps semble s'être arrêté. Yoles colorées, marché au poisson et vue sur la Dominique par temps clair.</p>
+    <span class="blog-meta">⏱ 5 min · 2026-04-01</span>
+  </div>
+</a>
+<a href="blog/habitation-ceron.html" class="blog-card">
+  <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1800&q=80" alt="L'Habitation Céron & son Zamana" loading="lazy"/>
+  <div class="blog-card-body">
+    <span class="blog-cat" style="background:#f0e6d6;color:#8b5e3c;">Culture & Patrimoine</span>
+    <h3>L'Habitation Céron & son Zamana</h3>
+    <p>Le plus bel arbre de France pousse au Prêcheur, au cœur d'une ancienne sucrerie devenue jardin remarquable. Un lieu suspendu hors du temps.</p>
+    <span class="blog-meta">⏱ 2 min · 2026-04-01</span>
+  </div>
+</a>
+<a href="blog/montagne-pelee.html" class="blog-card">
+  <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=1800&q=80" alt="L'ascension de la Montagne Pelée" loading="lazy"/>
+  <div class="blog-card-body">
+    <span class="blog-cat" style="background:#e0f0e4;color:#2d6e3f;">Randonnée</span>
+    <h3>L'ascension de la Montagne Pelée</h3>
+    <p>Le toit de la Martinique, 1 397 mètres d'histoire, de roche et de nuages. Une randonnée mythique qu'il faut avoir faite au moins une fois.</p>
+    <span class="blog-meta">⏱ 5 min · 2026-04-01</span>
+  </div>
+</a>
+<a href="blog/plongee-epaves-saint-pierre.html" class="blog-card">
+  <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1800&q=80" alt="Plongée sur les épaves de Saint-Pierre" loading="lazy"/>
+  <div class="blog-card-body">
+    <span class="blog-cat" style="background:#d8f0f5;color:#0097a7;">Activités nautiques</span>
+    <h3>Plongée sur les épaves de Saint-Pierre</h3>
+    <p>Un cimetière marin unique au monde : 12 navires coulés par l'éruption de 1902, aujourd'hui recouverts de coraux et d'histoires.</p>
+    <span class="blog-meta">⏱ 2 min · 2026-04-01</span>
+  </div>
+</a>
+<a href="blog/randonnee-precheur-grand-riviere.html" class="blog-card">
+  <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=1800&q=80" alt="Rando Prêcheur → Grand'Rivière" loading="lazy"/>
+  <div class="blog-card-body">
+    <span class="blog-cat" style="background:#e0f0e4;color:#2d6e3f;">Randonnée</span>
+    <h3>Rando Prêcheur → Grand'Rivière</h3>
+    <p>17 km de côte sauvage à travers une Martinique totalement vierge. Et le clou du spectacle : retour à son point de départ en yole de pêche.</p>
+    <span class="blog-meta">⏱ 20 min · 2026-04-01</span>
+  </div>
+</a>
+<a href="blog/saint-pierre.html" class="blog-card">
+  <img src="https://images.unsplash.com/photo-1584467735815-f778f274e296?w=1800&q=80" alt="Saint-Pierre, la Pompéi des Caraïbes" loading="lazy"/>
+  <div class="blog-card-body">
+    <span class="blog-cat" style="background:#f0e6d6;color:#8b5e3c;">Culture & Patrimoine</span>
+    <h3>Saint-Pierre, la Pompéi des Caraïbes</h3>
+    <p>L'ancienne capitale rayée de la carte en 2 minutes. Aujourd'hui Ville d'Art et d'Histoire, c'est le lieu le plus émouvant de la Martinique.</p>
+    <span class="blog-meta">⏱ 2 min · 2026-04-01</span>
+  </div>
+</a>
+</div>
+<footer>
+  <div class="footer-inner">
+    <span class="footer-copy">© 2025 Entre la Caraïbe et la Pelée · <a href="index.html">Accueil</a> · <a href="blog.html">Explorer le Nord</a> · <a href="index.html#contact">Contact</a></span>
+    <span class="footer-copy">12 hébergements · Le Carbet · Morne-Rouge · Saint-Pierre · Martinique</span>
+  </div>
+</footer>
+<script>
+function toggleMenu(){var l=document.querySelector('.nav-links');if(l.style.display==='flex'){l.style.display='none'}else{l.style.display='flex';l.style.flexDirection='column';l.style.position='fixed';l.style.top='80px';l.style.left='0';l.style.right='0';l.style.background='rgba(26,48,64,0.97)';l.style.padding='20px 24px';l.style.gap='16px';l.style.zIndex='99'}}
+</script>
+</body>
+</html>
